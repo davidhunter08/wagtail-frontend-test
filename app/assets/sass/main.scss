@@ -9,10 +9,40 @@
 // Add your custom CSS/Sass styles below... 
 ///////////////////////////////////////////
 
+// nhsuk-list variant with a border
 .nhsuk-list--border {
   li {
     @include top-and-bottom;
+
     border-bottom: 1px solid $color_nhsuk-grey-4;
     padding: nhsuk-spacing(2) nhsuk-spacing(0) nhsuk-spacing(3);
+
+    &:first-of-type {
+      @include mq($until: tablet) {
+        border-top: 1px solid $color_nhsuk-grey-4;
+        padding-top: nhsuk-spacing(3);
+      }
+    }
+  }
+}
+
+// nhsuk-list variant with smaller text
+.nhsuk-list--small {
+  li {
+    @include nhsuk-font(16);
+
+    @include mq($until: tablet) {
+      margin-bottom: nhsuk-spacing(1);
+    }
+  }
+}
+
+// new style for page heading section
+.nhsuk-page-heading {
+  @include top-and-bottom;
+  margin-bottom: nhsuk-spacing(6);
+
+  h1 {
+    margin-bottom: nhsuk-spacing(4);
   }
 }
