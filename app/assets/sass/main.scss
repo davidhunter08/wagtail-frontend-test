@@ -26,17 +26,6 @@
   }
 }
 
-// nhsuk-list variant with smaller text
-.nhsuk-list--small {
-  li {
-    @include nhsuk-font(16);
-
-    @include mq($until: tablet) {
-      margin-bottom: nhsuk-spacing(1);
-    }
-  }
-}
-
 // new style for page heading section
 .nhsuk-page-heading {
   @include top-and-bottom;
