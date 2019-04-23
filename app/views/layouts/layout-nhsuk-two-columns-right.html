@@ -1,0 +1,49 @@
+{% extends 'layouts/layout-nhsuk.html' %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      {% block content_page_heading %}
+      
+        <div class="layout-example">
+
+          Two thirds (page heading)
+          
+        </div>
+        
+      {% endblock %}
+
+    </div>
+  </div>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      {% block content_two_thirds %}
+      
+        <div class="layout-example">
+
+          Two thirds
+          
+        </div>
+        
+      {% endblock %}
+
+    </div>  
+
+    <div class="nhsuk-grid-column-one-third">
+      
+      {% block content_one_third %}
+      
+        <div class="layout-example">
+
+          One third
+          
+        </div>
+        
+      {% endblock %}
+
+    </div>
+  </div>
+{% endblock %}

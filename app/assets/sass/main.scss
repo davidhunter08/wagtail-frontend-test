@@ -9,6 +9,12 @@
 // Add your custom CSS/Sass styles below... 
 ///////////////////////////////////////////
 
+.layout-example {
+  background: rgba(255,255,255,0.8);
+  border: 1px dashed $color_nhsuk-grey-3;
+  padding: nhsuk-spacing(4);
+}
+
 // nhsuk-list variant with a border
 .nhsuk-list--border {
   li {
