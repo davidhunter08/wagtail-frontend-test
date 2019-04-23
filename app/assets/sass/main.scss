@@ -26,12 +26,12 @@
   }
 }
 
-// new style for page heading section
-.nhsuk-page-heading {
-  @include top-and-bottom;
-  margin-bottom: nhsuk-spacing(6);
+// H1 margin
+.nhsuk-heading-xl, h1 {
+  @include nhsuk-responsive-margin(5, 'bottom', important);
+}
 
-  h1 {
-    margin-bottom: nhsuk-spacing(4);
-  }
+// Utility class for changing text colour
+.nhsuk-u-secondary-text-color {
+  color: $nhsuk-secondary-text-color !important;
 }

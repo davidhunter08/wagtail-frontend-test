@@ -1,0 +1,61 @@
+{% extends 'layouts/layout-nhsuk.html' %}
+
+{% block pageTitle %}
+  CHQ_Section_HomePage__desktop
+{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    href: "/",
+    text: "Home"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+        <h1>
+          Common health questions
+        </h1>
+
+        
+            <h2>Select a topic:</h2>
+
+              <ul class="nhsuk-list">
+                  
+                <li><a href="/common-health-questions/accidents-first-aid-and-treatments/">Accidents, first aid and treatments</a></li>
+            
+                <li><a href="/common-health-questions/caring-carers-and-long-term-conditions/">Caring, carers and long-term conditions</a></li>
+            
+                <li><a href="/common-health-questions/childrens-health/">Children's health</a></li>
+            
+                <li><a href="/common-health-questions/dental-health/">Dental health</a></li>
+            
+                <li><a href="/common-health-questions/food-and-diet/">Food and diet</a></li>
+            
+                <li><a href="/common-health-questions/infections/">Infections</a></li>
+            
+                <li><a href="/common-health-questions/lifestyle/">Lifestyle</a></li>
+            
+                <li><a href="/common-health-questions/medicines/">Medicines</a></li>
+            
+                <li><a href="/common-health-questions/mens-health/">Men's health</a></li>
+            
+                <li><a href="/common-health-questions/nhs-services-and-treatments/">NHS services and treatments</a></li>
+            
+                <li><a href="/common-health-questions/operations-tests-and-procedures/">Operations, tests and procedures</a></li>
+            
+                <li><a href="/pages/common_health_questions/CHQ_Topic_Page__desktop">Pregnancy</a></li>
+            
+                <li><a href="/common-health-questions/sexual-health/">Sexual health</a></li>
+            
+                <li><a href="/common-health-questions/travel-health/">Travel health</a></li>
+            
+                <li><a href="/common-health-questions/womens-health/">Women's health</a></li>
+            
+        </ul>
+    </div>  
+
+  </div>
+{% endblock %}

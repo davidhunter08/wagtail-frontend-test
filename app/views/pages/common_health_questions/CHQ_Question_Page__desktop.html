@@ -1,0 +1,81 @@
+{% extends 'layouts/layout-nhsuk.html' %}
+
+{% block pageTitle %}
+  CHQ_Question_Page__desktop
+{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      {
+        href: "/",
+        text: "Home"
+      },
+      {
+        href: "/pages/common_health_questions/CHQ_Section_HomePage__desktop",
+        text: "Common health questions"
+      }
+    ],
+    href: "/pages/common_health_questions/CHQ_Topic_Page__desktop",
+    text: "Pregnancy"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1>
+        What is preconception care?
+      </h1>
+
+      <section id="">
+
+        <p>Preconception care is an opportunity for you and your partner to improve your health before you start trying for a baby. A healthcare professional can help you to assess your health, fitness and lifestyle, to identify areas that you may want to improve.</p>
+
+        <p>Preconception care may be useful if:</p>
+
+        <ul>
+        <li>you want to find out how a condition such as <a href="/conditions/pregnancy-and-baby/diabetes-pregnant/">diabetes</a> or <a href="/conditions/pregnancy-and-baby/epilepsy-pregnant/">epilepsy</a> can affect pregnancy </li>
+        <li>you're having trouble getting pregnant </li>
+        <li>there is a risk that you could pass on a genetic condition, such as <a href="/conditions/pregnancy-and-baby/screening-sickle-cell-thalassaemia-pregnant/">sickle cell disease or thalassaemia</a>, to your baby</li>
+        </ul>
+
+        <p>Allow plenty of time for preconception planning and care before you start to try for a baby.</p>
+
+        <p>You will increase your chances of getting pregnant if both you and your partner are in good health. A bad diet, being overweight or obese,&nbsp;smoking, drinking and unhealthy working conditions can affect the quality of sperm and stop you getting pregnant. You should both try to make your lifestyle as healthy as possible before you try to conceive.</p>
+
+        <p>If you need advice about preconception care before trying for a baby, your GP or a midwife can give you more information. Preconception care is also provided by some practice nurses, health visitors, family planning clinics and well woman clinics.</p>
+
+        <p>Read the answers to more <a href="/common-health-questions/pregnancy/">questions about pregnancy</a>.</p>
+
+      </section>
+
+      <section id="further-information">
+
+        <div class="nhsuk-panel-with-label">
+
+          <h2 class="nhsuk-panel-with-label__label">Further information:</h2>
+
+          <ul>
+            <li><a href="/common-health-questions/pregnancy/how-can-i-increase-my-chances-of-getting-pregnant/">How can I increase my chances of getting pregnant?</a></li>
+            <li><a href="/common-health-questions/womens-health/how-can-i-tell-when-i-am-ovulating/">How can I tell when I'm ovulating?</a></li>
+            <li><a href="/common-health-questions/pregnancy/when-am-i-most-fertile-during-my-cycle/">When am I most fertile during my cycle?</a></li>
+            <li><a href="/conditions/infertility/">Fertility</a>&nbsp; </li>
+            <li><a href="/conditions/pregnancy-and-baby/vitamins-minerals-supplements-pregnant/">Vitamins and nutrition in pregnancy</a></li>
+            <li><a href="/conditions/pregnancy-and-baby/">Your pregnancy and baby guide</a></li>
+          </ul>
+
+        </div>
+
+      </section>
+
+      {{ reviewDate({
+        "lastReview": "12 February 2017",
+        "nextReview": "1 February 2020"
+      }) }}
+
+    </div>  
+
+  </div>
+{% endblock %}
