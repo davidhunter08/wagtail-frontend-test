@@ -9,11 +9,15 @@
 // Add your custom CSS/Sass styles below... 
 ///////////////////////////////////////////
 
+// Used to highlight the sections of the page
 .layout-example {
   background: rgba(255,255,255,0.8);
   border: 1px dashed $color_nhsuk-grey-3;
   padding: nhsuk-spacing(4);
 }
+
+// NEW STYLES TO REPLACE LEGACY WAGTAIL CSS
+// POTENTIALLY ADD TO THE FRONTEND
 
 // nhsuk-list variant with a border
 .nhsuk-list--border {
