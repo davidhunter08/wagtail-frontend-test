@@ -26,12 +26,6 @@
   }
 }
 
-.nhsuk-list.nhsuk-list--bigger-margin {
-  li {
-    margin-bottom: nhsuk-spacing(3);
-  }
-}
-
 // H1 margin
 .nhsuk-heading-xl, h1 {
   @include nhsuk-responsive-margin(5, 'bottom', important);
