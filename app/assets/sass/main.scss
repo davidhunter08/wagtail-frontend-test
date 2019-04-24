@@ -16,10 +16,17 @@
   padding: nhsuk-spacing(4);
 }
 
+// Wagtail specific h2 section spacing
+// Because the p + h2 styling gets ignored because of the section
+section + section h2 {
+  padding-top: nhsuk-spacing(3);
+}
+
 // NEW STYLES TO REPLACE LEGACY WAGTAIL CSS
 // POTENTIALLY ADD TO THE FRONTEND
 
 // nhsuk-list variant with a border
+// to replace wagtail specific css
 .nhsuk-list--border {
   li {
     @include top-and-bottom;
@@ -28,7 +35,9 @@
     padding: nhsuk-spacing(2) nhsuk-spacing(0) nhsuk-spacing(3);
 
     &:first-of-type {
-      @include mq($until: tablet) {
+      padding: nhsuk-spacing(0) nhsuk-spacing(0) nhsuk-spacing(3);
+
+      @include mq($until: desktop) {
         border-top: 1px solid $color_nhsuk-grey-4;
         padding-top: nhsuk-spacing(3);
       }
@@ -36,17 +45,19 @@
   }
 }
 
-// H1 margin
-.nhsuk-heading-xl, h1 {
-  @include nhsuk-responsive-margin(5, 'bottom', important);
-}
-
 // Utility class for changing text colour
 .nhsuk-u-secondary-text-color {
   color: $nhsuk-secondary-text-color !important;
 }
 
+// Lede text styling
+// Because the styling is not consistent across the site for lede text
 .nhsuk-lede-text {
   @include nhsuk-font(22);
   @include nhsuk-responsive-margin(7, 'bottom');
+}
+
+// Reduces the spacing between the page heading and the lede text
+h1 + .nhsuk-lede-text {
+  margin-top: - nhsuk-spacing(4);
 }
