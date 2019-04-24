@@ -53,11 +53,17 @@ section + section h2 {
 // Lede text styling
 // Because the styling is not consistent across the site for lede text
 .nhsuk-lede-text {
-  @include nhsuk-font(22);
+  @include nhsuk-font(24);
   @include nhsuk-responsive-margin(7, 'bottom');
 }
 
+.nhsuk-lede-text--small {
+  @include nhsuk-font(19);
+  @include nhsuk-responsive-margin(5, 'bottom');
+}
+
 // Reduces the spacing between the page heading and the lede text
-h1 + .nhsuk-lede-text {
+h1 + .nhsuk-lede-text,
+h1 + .nhsuk-lede-text--small {
   margin-top: - nhsuk-spacing(4);
 }

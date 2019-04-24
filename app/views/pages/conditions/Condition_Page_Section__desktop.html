@@ -1,0 +1,201 @@
+{% extends 'layouts/layout-nhsuk-two-columns-right.html' %}
+
+{% block pageTitle %}
+  Condition_Page_Section__desktop
+{% endblock %}
+
+{% block content_page_heading %}
+
+  <h1>         
+    <span role="text">Symptoms<span class="nhsuk-caption-xl nhsuk-caption--bottom"><span class="nhsuk-u-visually-hidden"> -</span> Age-related macular degeneration (AMD)</span></span>
+  </h1>
+
+  {{ contentsList({
+    items: [
+      {
+        href: "/pages/conditions/Condition_Page__desktop",
+        text: "What is AMD?"
+      },
+      {
+        href: "/pages/conditions/Condition_Page_Section__desktop",
+        text: "Symptoms",
+        current: "true"
+      },
+      {
+        href: "https://www.nhs.uk/conditions/age-related-macular-degeneration-amd/getting-diagnosed/",
+        text: "Getting diagnosed"
+      }
+      ,
+      {
+        href: "https://www.nhs.uk/conditions/age-related-macular-degeneration-amd/treatment/",
+        text: "Treatments"
+      }
+      ,
+      {
+        href: "https://www.nhs.uk/conditions/age-related-macular-degeneration-amd/living-with-amd/",
+        text: "Living with AMD"
+      }
+    ]
+  }) }}
+
+{% endblock %}
+
+{% block content_two_thirds %}
+<article class="nhsuk-page-content">
+        
+        
+          
+
+<section id="main-symptoms">
+  
+    
+      
+
+
+
+<p>AMD affects the middle part of your vision, not the edges (peripheral vision).</p>
+
+<p>You can get it in one eye or both.</p>
+
+
+
+{{ image({
+  "src": "https://assets.nhs.uk/prod/images/S_1017_allergic-conjunctivitis_M15.2e16d0ba.fill-320x213.jpg",
+  "alt": "Picture of allergic conjunctivitis",
+  "caption": "Itchy, red, watering eyes"
+}) }}
+
+{{ image({
+  "src": "https://assets.nhs.uk/prod/images/S_1017_allergic-conjunctivitis_M15.2e16d0ba.fill-320x213.jpg",
+  "alt": "Picture of allergic conjunctivitis",
+  "caption": "Itchy, red, watering eyes"
+}) }}
+
+
+    
+  
+    
+      
+
+
+
+<p>AMD can make things like reading, watching TV, driving or recognising faces difficult.</p>
+
+
+
+
+    
+  
+</section>
+
+        
+          
+
+<section id="other-symptoms">
+  
+    
+      
+
+
+
+<p>Other symptoms include:</p>
+
+<ul>
+<li>seeing straight lines as wavy or crooked</li>
+<li>objects looking smaller than normal</li>
+<li>colours seeming less bright than they used to</li>
+<li>seeing things that aren't there (hallucinations)</li>
+</ul>
+
+<p>AMD isn't painful and doesn't affect the appearance of your eyes.</p>
+
+
+
+
+    
+  
+    
+      
+
+
+
+<div class="nhsuk-inset-text">
+    <span class="nhsuk-u-visually-hidden">Information: </span>
+    <p>Sometimes AMD may be found during a routine eye test before you have symptoms.</p>
+
+</div>
+
+
+
+    
+  
+</section>
+
+        
+          
+
+<section id="when-to-get-medical-help">
+  
+
+{{ careCard({
+  "type": "non-urgent",
+  "heading": "Speak to a GP if:",
+  "HTML": "
+  <ul>
+    <li>you're not sure it's chickenpox</li>
+    <li>the skin around the blisters is red, hot or painful (signs of infection)</li>
+    <li>your child is <a href=\"https://www.nhs.uk/conditions/dehydration\">dehydrated</a></li>
+    <li>you're concerned about your child or they get worse</li>
+  </ul>
+  <p>Tell the receptionist you think it's chickenpox before going in. They may recommend a special appointment time if other patients are at risk.</p>
+  "
+}) }}
+
+
+
+    
+  
+    
+      
+
+
+{{ careCard({
+  "type": "urgent",
+  "heading": "Ask for an urgent GP appointment if:",
+  "HTML": "
+  <ul>
+    <li>you're an adult and have chickenpox</li>
+    <li>you're pregnant and haven't had chickenpox before and you've been near someone with it </li>
+    <li>you have a weakened immune system and you've been near someone with chickenpox</li>
+    <li>you think your newborn baby has chickenpox</li>
+  </ul>
+   <p>In these situations, your GP can prescribe medicine to prevent complications. You need to take it within 24 hours of the spots coming out.</p>
+  "
+}) }}
+
+
+
+    
+  
+</section>
+
+        
+
+{{ reviewDate({
+  "lastReview": "12 February 2017",
+  "nextReview": "1 February 2020"
+}) }}
+
+{{ pagination({
+  "previousUrl": "/pages/conditions/Condition_Page__desktop",
+  "previousPage": "What is AMD?",
+  "nextUrl": "/section/symptoms",
+  "nextPage": "Getting diagnosed"
+}) }}
+
+
+
+{% endblock %}
+
+{% block content_one_third %}
+{% endblock %}
