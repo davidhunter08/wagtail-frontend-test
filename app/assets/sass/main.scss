@@ -45,3 +45,8 @@
 .nhsuk-u-secondary-text-color {
   color: $nhsuk-secondary-text-color !important;
 }
+
+.nhsuk-lede-text {
+  @include nhsuk-font(22);
+  @include nhsuk-responsive-margin(7, 'bottom');
+}
