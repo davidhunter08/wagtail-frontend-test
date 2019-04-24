@@ -4,6 +4,19 @@
   conditions_article_page
 {% endblock %}
 
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      {
+        href: "/",
+        text: "Home"
+      }
+    ],
+    href: "/pages/conditions/conditions_curated_hub_page",
+    text: "Foot pain"
+  }) }}
+{% endblock %}
+
 {% block content_page_heading %}
 <h1>Ankle pain</h1>
 <p class="nhsuk-lede-text">There are lots of causes of ankle pain. You can usually ease the pain yourself. But see a GP if the pain does not improve.</p>
@@ -98,7 +111,7 @@
 {% from 'action-link/macro.njk' import actionLink %}
 
 {{ actionLink({
-  "text": "Find a minor injuries unit",
+  "text": "Find a pharmacy",
   "href": "https://www.nhs.uk/service-search/minor-injuries-unit/locationsearch/551"
 }) }}
 
@@ -205,7 +218,7 @@
 }) }}
 
 {{ backLink({
-  "href": "#",
+  "href": "/pages/conditions/conditions_curated_hub_page",
   "text": "Back to Foot pain"
 }) }}
 

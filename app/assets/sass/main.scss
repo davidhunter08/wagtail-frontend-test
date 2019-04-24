@@ -67,3 +67,10 @@ h1 + .nhsuk-lede-text,
 h1 + .nhsuk-lede-text--small {
   margin-top: - nhsuk-spacing(4);
 }
+
+.nhsuk-lede-text {
+  p,
+  ul {
+    @include nhsuk-font(24);
+  }
+}
