@@ -1,7 +1,7 @@
 {% extends 'layouts/layout-nhsuk-two-columns-right.html' %}
 
 {% block pageTitle %}
-  Condition_Page_Section__desktop
+  Condition_Page_Section
 {% endblock %}
 
 {% block content_page_heading %}
@@ -13,11 +13,11 @@
   {{ contentsList({
     items: [
       {
-        href: "/pages/conditions/Condition_Page__desktop",
+        href: "/pages/conditions/Condition_Page",
         text: "What is AMD?"
       },
       {
-        href: "/pages/conditions/Condition_Page_Section__desktop",
+        href: "/pages/conditions/Condition_Page_Section",
         text: "Symptoms",
         current: "true"
       },
@@ -187,7 +187,7 @@
 }) }}
 
 {{ pagination({
-  "previousUrl": "/pages/conditions/Condition_Page__desktop",
+  "previousUrl": "/pages/conditions/Condition_Page",
   "previousPage": "What is AMD?",
   "nextUrl": "/section/symptoms",
   "nextPage": "Getting diagnosed"

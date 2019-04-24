@@ -1,0 +1,347 @@
+{% extends 'layouts/layout-nhsuk-two-columns-right.html' %}
+
+{% block pageTitle %}
+  conditions_article_page
+{% endblock %}
+
+{% block content_page_heading %}
+
+
+{% endblock %}
+
+{% block content_two_thirds %}
+
+<div class="nhsuk-page-content">
+
+                <section class="nhsuk-page-content__section-one">
+                    <div class="nhsuk-reading-width">
+                        <div class="nhsuk-page-heading">
+                            <h1>Ankle pain</h1>
+                        </div>
+                        <div class="nhsuk-page-content">
+                            <div class="block-markdown">
+
+
+
+<p><strong>There are lots of causes of ankle pain. You can usually ease the pain yourself. But see a GP if the pain does not improve.</strong></p>
+
+
+
+</div>
+<div class="block-markdown">
+
+
+
+<h2>How you can ease ankle pain yourself</h2>
+
+<p>If you see a GP, they'll usually suggest you try these things:</p>
+
+
+
+</div>
+<div class="block-dodont">
+
+
+
+
+<div class="nhsuk-c-panel nhsuk-c-panel-list-check">
+    <h3 id="do" class="nhsuk-c-panel__header">Do</h3>
+    <ul class="list--check">
+<li>rest and raise your ankle when you can</li>
+<li>put an ice pack (or bag of frozen peas) in a towel on your ankle for up to 20 minutes every 2 to 3 hours</li>
+<li>wear wide comfortable shoes with a low heel and soft sole</li>
+<li>use soft insoles or heel pads in your shoes</li>
+<li>wrap a bandage around your ankle to support it</li>
+<li>try regular <a href="https://www.csp.org.uk/public-patient/rehabilitation-exercises/foot-pain">gentle stretching exercises</a></li>
+<li>take paracetamol</li>
+</ul>
+
+</div>
+
+<div class="nhsuk-c-panel nhsuk-c-panel-list-cross">
+    <h3 id="dont" class="nhsuk-c-panel__header">Don't</h3>
+    <ul class="list--cross">
+<li>do not take ibuprofen for the first 48 hours after an injury</li>
+<li>do not walk or stand for long periods</li>
+<li>do not wear high heels or tight pointy shoes</li>
+</ul>
+
+</div>
+
+
+</div>
+<div class="block-markdown">
+
+
+
+<h3>You can ask a pharmacist about:</h3>
+
+<ul>
+<li>the best painkiller to take</li>
+<li>insoles and pads for your shoes</li>
+<li>treatments for common skin problems</li>
+<li>if you need to see a GP</li>
+</ul>
+
+
+
+</div>
+<div class="block-find_a_service">
+
+
+
+<div class="nhsuk-c-action-link">
+    <p><a href="https://beta.nhs.uk/find-a-pharmacy/">Find a pharmacy</a></p>
+
+</div>
+
+
+</div>
+<div class="block-primary_care">
+
+
+
+<div class="nhsuk-c-care-card nhsuk-c-care-card--blue">
+  <div class="nhsuk-c-care-card__heading">
+    <h2 class="nhsuk-heading-m">See a GP if:</h2>
+    <span class="nhsuk-c-care-card__arrow" aria-hidden="true"></span>
+  </div>
+  <div class="nhsuk-c-care-card__content">
+    <ul>
+<li>the pain is severe or stopping you doing normal activities</li>
+<li>the pain is getting worse or keeps coming back</li>
+<li>the pain has not improved after treating it at home for 2 weeks</li>
+<li>you have any tingling or loss of sensation in your foot</li>
+<li>you have diabetes – foot problems can be more serious if you have diabetes</li>
+</ul>
+
+    
+        
+
+<div class="pain-scale">
+    <div class="pain-scale-link" onclick="toggle_pain_scale(this.parentElement)">
+        <img class="pain-info-icon" src="/static/nhsuk_shared/img/icon-info-blue.18ed105cd40c.svg"> What we mean by severe pain
+    </div>
+    <div class="pain-scale-table" style="margin-top: 0px; display: none;">
+        <ul class="pain-scale-table_inner">
+            <li class="pain-type severe-pain">
+                <div class="pain-left">
+                    <img class="severe-pain-point" src="/static/nhsuk_shared/img/icon-bullet-pain-scale.24a770e1839d.svg"> Severe pain:
+                </div>
+                <div class="pain-right">
+                    <ul>
+                        <li>always there and so bad it’s hard to think or talk</li>
+                        <li>you can’t sleep</li>
+                        <li>it’s very hard to move, get out of bed, go to the bathroom, wash or dress</li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+            <li class="pain-type">
+                <div class="pain-left">
+                    <img class="moderate-pain-point" src="/static/nhsuk_shared/img/icon-bullet-pain-scale.24a770e1839d.svg"> Moderate pain:
+                </div>
+                <div class="pain-right">
+                    <ul>
+                        <li>always there</li>
+                        <li>makes it hard to concentrate or sleep</li>
+                        <li>you can manage to get up, wash or dress</li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+            <li class="pain-type mild-pain">
+                <div class="pain-left">
+                    <img class="mild-pain-point" src="/static/nhsuk_shared/img/icon-bullet-pain-scale.24a770e1839d.svg"> Mild pain:
+                </div>
+                <div class="pain-right">
+                <ul>
+                    <li>comes and goes</li>
+                    <li>is annoying but doesn’t stop you doing things like going to work</li>
+                </ul>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+        </ul>
+    </div>
+    <div class="clearfix"></div>
+<script type="text/javascript">
+  function toggle_pain_scale (e) {
+      if ($(e).hasClass('pain_scale_open')) {
+          $(e).removeClass('pain_scale_open');
+          $(e).find('.pain-scale-table').css('display', 'none');
+      } else {
+          $(e).addClass('pain_scale_open');
+          $(e).find('.pain-scale-table').css('display', 'block');
+      }
+  }
+</script>
+</div>
+
+    
+  </div>
+</div>
+
+
+</div>
+<div class="block-emergency">
+
+
+
+<div class="nhsuk-c-care-card nhsuk-c-care-card--black">
+  <div class="nhsuk-c-care-card__heading">
+    <h2 class="nhsuk-heading-m">Go to an urgent treatment centre or A&amp;E if you:</h2>
+    <span class="nhsuk-c-care-card__arrow" aria-hidden="true"></span>
+  </div>
+  <div class="nhsuk-c-care-card__content">
+    <ul>
+<li>have severe pain</li>
+<li>feel faint, dizzy or sick from the pain</li>
+<li>have an ankle or foot that has changed shape or is at an odd angle</li>
+<li>heard a snap, grinding or popping noise at the time of injury</li>
+<li><p>are not able to walk</p>
+
+<p>These might be signs of a broken ankle.</p></li>
+</ul>
+
+<p><a href="/service-search/Urgent-Treatment-Centre/LocationSearch/10022">Find an urgent treatment centre</a></p>
+
+    
+        
+
+<div class="pain-scale">
+    <div class="pain-scale-link" onclick="toggle_pain_scale(this.parentElement)">
+        <img class="pain-info-icon" src="/static/nhsuk_shared/img/icon-info-blue.18ed105cd40c.svg"> What we mean by severe pain
+    </div>
+    <div class="pain-scale-table" style="margin-top: 0px; display: none;">
+        <ul class="pain-scale-table_inner">
+            <li class="pain-type severe-pain">
+                <div class="pain-left">
+                    <img class="severe-pain-point" src="/static/nhsuk_shared/img/icon-bullet-pain-scale.24a770e1839d.svg"> Severe pain:
+                </div>
+                <div class="pain-right">
+                    <ul>
+                        <li>always there and so bad it’s hard to think or talk</li>
+                        <li>you can’t sleep</li>
+                        <li>it’s very hard to move, get out of bed, go to the bathroom, wash or dress</li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+            <li class="pain-type">
+                <div class="pain-left">
+                    <img class="moderate-pain-point" src="/static/nhsuk_shared/img/icon-bullet-pain-scale.24a770e1839d.svg"> Moderate pain:
+                </div>
+                <div class="pain-right">
+                    <ul>
+                        <li>always there</li>
+                        <li>makes it hard to concentrate or sleep</li>
+                        <li>you can manage to get up, wash or dress</li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+            <li class="pain-type mild-pain">
+                <div class="pain-left">
+                    <img class="mild-pain-point" src="/static/nhsuk_shared/img/icon-bullet-pain-scale.24a770e1839d.svg"> Mild pain:
+                </div>
+                <div class="pain-right">
+                <ul>
+                    <li>comes and goes</li>
+                    <li>is annoying but doesn’t stop you doing things like going to work</li>
+                </ul>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+        </ul>
+    </div>
+    <div class="clearfix"></div>
+<script type="text/javascript">
+  function toggle_pain_scale (e) {
+      if ($(e).hasClass('pain_scale_open')) {
+          $(e).removeClass('pain_scale_open');
+          $(e).find('.pain-scale-table').css('display', 'none');
+      } else {
+          $(e).addClass('pain_scale_open');
+          $(e).find('.pain-scale-table').css('display', 'block');
+      }
+  }
+</script>
+</div>
+
+    
+  </div>
+</div>
+
+
+</div>
+<div class="block-markdown">
+
+
+
+<h2>Common causes of ankle pain</h2>
+
+<p>Ankle pain is often caused by exercising too much or wearing shoes that are too tight.</p>
+
+<p>Your symptoms might also give you an idea of what's causing your ankle pain.</p>
+
+<table>
+<thead>
+<tr>
+  <th>Symptoms</th>
+  <th>Possible cause</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Pain, swelling, bruising, started after intense or repetitive exercise</td>
+  <td><a href="/conditions/sprains-and-strains/">sprained ankle</a></td>
+</tr>
+<tr>
+  <td>Pain in ankle and heel, pain in calf when standing on tiptoes</td>
+  <td><a href="/conditions/tendonitis/">Achilles tendonitis</a></td>
+</tr>
+<tr>
+  <td>Redness and swelling, dull aching pain</td>
+  <td><a href="/conditions/bursitis/">bursitis</a></td>
+</tr>
+<tr>
+  <td>Sudden sharp pain, swelling, a popping or snapping sound during the injury, difficulty walking, ankle at odd angle</td>
+  <td><a href="/conditions/broken-ankle/">broken ankle</a></td>
+</tr>
+</tbody>
+</table>
+
+
+
+</div>
+<div class="block-information">
+
+
+
+<div class="nhsuk-inset-text">
+    <span class="visually-hidden">Information: </span>
+    <p>Do not worry if you're not sure what the problem is. </p>
+
+<p>Follow the advice on this page and see a GP if the pain does not get better in 2 weeks.</p>
+
+<p>You can also read about <a href="/conditions/foot-pain/">pain in other areas of your foot</a>.</p>
+
+</div>
+
+
+</div>
+                        </div>
+                        {{ reviewDate({
+                          "lastReview": "12 February 2017",
+                          "nextReview": "1 February 2020"
+                        }) }}
+                    </div>
+                </section>
+            </div>
+
+
+{% endblock %}
+
+{% block content_one_third %}
+{% endblock %}

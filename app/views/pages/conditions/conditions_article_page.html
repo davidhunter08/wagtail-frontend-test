@@ -1,0 +1,219 @@
+{% extends 'layouts/layout-nhsuk-two-columns-right.html' %}
+
+{% block pageTitle %}
+  conditions_article_page
+{% endblock %}
+
+{% block content_page_heading %}
+<h1>Ankle pain</h1>
+<p class="nhsuk-lede-text">There are lots of causes of ankle pain. You can usually ease the pain yourself. But see a GP if the pain does not improve.</p>
+
+{% endblock %}
+
+{% block content_two_thirds %}
+<section class="nhsuk-page-content__section-one">
+                    <div class="nhsuk-reading-width">
+                        <div class="nhsuk-page-content">
+                            <div class="block-markdown">
+
+
+
+
+</div>
+<div class="block-markdown">
+
+
+
+<h2>How you can ease ankle pain yourself</h2>
+
+<p>If you see a GP, they'll usually suggest you try these things:</p>
+
+
+
+</div>
+<div class="block-dodont">
+
+
+
+
+{% from 'do-dont-list/macro.njk' import list %}
+
+{{ list({
+  "title": "Do",
+  "type": "tick",
+  "items": [
+    {
+      "item": "cover blisters that are likely to burst with a soft plaster or dressing"
+    },
+    {
+      "item": "wash your hands before touching a burst blister"
+    },
+    {
+      "item": "allow the fluid in a burst blister to drain before covering it with a plaster or dressing"
+    }
+  ]
+}) }}
+
+{{ list({
+  "title": "Don't",
+  "type": "cross",
+  "items": [
+    {
+      "item": "burst a blister yourself"
+    },
+    {
+      "item": "peel the skin off a burst blister"
+    },
+    {
+      "item": "pick at the edges of the remaining skin"
+    },
+    {
+      "item": "wear the shoes or use the equipment that caused your blister until it heals"
+    }
+  ]
+}) }}
+
+
+</div>
+<div class="block-markdown">
+
+
+
+<h3>You can ask a pharmacist about:</h3>
+
+<ul>
+<li>the best painkiller to take</li>
+<li>insoles and pads for your shoes</li>
+<li>treatments for common skin problems</li>
+<li>if you need to see a GP</li>
+</ul>
+
+
+
+</div>
+<div class="block-find_a_service">
+
+
+
+{% from 'action-link/macro.njk' import actionLink %}
+
+{{ actionLink({
+  "text": "Find a minor injuries unit",
+  "href": "https://www.nhs.uk/service-search/minor-injuries-unit/locationsearch/551"
+}) }}
+
+
+</div>
+
+<div class="block-primary-care">
+
+{{ careCard({
+  "type": "non-urgent",
+  "heading": "Speak to a GP if:",
+  "HTML": "
+  <ul>
+    <li>you're not sure it's chickenpox</li>
+    <li>the skin around the blisters is red, hot or painful (signs of infection)</li>
+    <li>your child is <a href=\"https://www.nhs.uk/conditions/dehydration\">dehydrated</a></li>
+    <li>you're concerned about your child or they get worse</li>
+  </ul>
+  <p>Tell the receptionist you think it's chickenpox before going in. They may recommend a special appointment time if other patients are at risk.</p>
+  "
+}) }}
+
+</div>
+
+<div class="block-urgent-care">
+
+{{ careCard({
+  "type": "urgent",
+  "heading": "Ask for an urgent GP appointment if:",
+  "HTML": "
+  <ul>
+    <li>you're an adult and have chickenpox</li>
+    <li>you're pregnant and haven't had chickenpox before and you've been near someone with it </li>
+    <li>you have a weakened immune system and you've been near someone with chickenpox</li>
+    <li>you think your newborn baby has chickenpox</li>
+  </ul>
+   <p>In these situations, your GP can prescribe medicine to prevent complications. You need to take it within 24 hours of the spots coming out.</p>
+  "
+}) }}
+</div>
+
+
+
+<div class="block-markdown">
+
+
+
+<h2>Common causes of ankle pain</h2>
+
+<p>Ankle pain is often caused by exercising too much or wearing shoes that are too tight.</p>
+
+<p>Your symptoms might also give you an idea of what's causing your ankle pain.</p>
+
+<table>
+<thead>
+<tr>
+  <th>Symptoms</th>
+  <th>Possible cause</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Pain, swelling, bruising, started after intense or repetitive exercise</td>
+  <td><a href="/conditions/sprains-and-strains/">sprained ankle</a></td>
+</tr>
+<tr>
+  <td>Pain in ankle and heel, pain in calf when standing on tiptoes</td>
+  <td><a href="/conditions/tendonitis/">Achilles tendonitis</a></td>
+</tr>
+<tr>
+  <td>Redness and swelling, dull aching pain</td>
+  <td><a href="/conditions/bursitis/">bursitis</a></td>
+</tr>
+<tr>
+  <td>Sudden sharp pain, swelling, a popping or snapping sound during the injury, difficulty walking, ankle at odd angle</td>
+  <td><a href="/conditions/broken-ankle/">broken ankle</a></td>
+</tr>
+</tbody>
+</table>
+
+
+
+</div>
+<div class="block-information">
+
+
+
+<div class="nhsuk-inset-text">
+    <span class="nhsuk-u-visually-hidden">Information: </span>
+    <p>Do not worry if you're not sure what the problem is. </p>
+
+<p>Follow the advice on this page and see a GP if the pain does not get better in 2 weeks.</p>
+
+<p>You can also read about <a href="/conditions/foot-pain/">pain in other areas of your foot</a>.</p>
+
+</div>
+
+
+</div>
+                        </div>
+ {{ reviewDate({
+  "lastReview": "12 February 2017",
+  "nextReview": "1 February 2020"
+}) }}
+
+{{ backLink({
+  "href": "#",
+  "text": "Back to Foot pain"
+}) }}
+
+                    </div>
+                </section>
+
+
+{% endblock %}
+
+{% block content_one_third %}
+{% endblock %}

@@ -1,7 +1,7 @@
 {% extends 'layouts/layout-nhsuk-two-columns-right.html' %}
 
 {% block pageTitle %}
-  CHQ_Question_Page__desktop
+  CHQ_Question_Page
 {% endblock %}
 
 {% block content_page_heading %}
@@ -13,12 +13,12 @@
   {{ contentsList({
     items: [
       {
-        href: "/pages/conditions/Condition_Page__desktop",
+        href: "/pages/conditions/Condition_Page",
         text: "What is AMD?",
         current: "true"
       },
       {
-        href: "/pages/conditions/Condition_Page_Section__desktop",
+        href: "/pages/conditions/Condition_Page_Section",
         text: "Symptoms"
       },
       {
@@ -306,7 +306,7 @@
 }) }}
 
 {{ pagination({
-  "nextUrl": "/pages/conditions/Condition_Page_Section__desktop",
+  "nextUrl": "/pages/conditions/Condition_Page_Section",
   "nextPage": "Symptoms"
 }) }}
 
