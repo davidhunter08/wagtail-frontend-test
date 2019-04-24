@@ -11,9 +11,13 @@
 
 // Used to highlight the sections of the page
 .layout-example {
-  background: rgba(255,255,255,0.8);
   border: 1px dashed $color_nhsuk-grey-3;
+  margin-bottom: nhsuk-spacing(5);
   padding: nhsuk-spacing(4);
+
+  .nhsuk-lede-text {
+    margin-bottom: 0;
+  }
 }
 
 // Wagtail specific h2 section spacing
