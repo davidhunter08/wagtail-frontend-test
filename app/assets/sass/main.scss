@@ -5,9 +5,8 @@
 @import 'components/panel-confirmation';
 @import 'components/related-nav';
 
-///////////////////////////////////////////
-// Add your custom CSS/Sass styles below... 
-///////////////////////////////////////////
+// Wagtail components
+@import 'components/video';
 
 // Used to highlight the sections of the page
 .layout-example {
@@ -72,9 +71,28 @@ h1 + .nhsuk-lede-text--small {
   margin-top: - nhsuk-spacing(4);
 }
 
+// Apply lede text styling to p and ul within the lede (see foot pain hub)
 .nhsuk-lede-text {
   p,
   ul {
     @include nhsuk-font(24);
+  }
+}
+
+// Variant for a promo with a transparent background
+.nhsuk-promo__link-wrapper--mute.nhsuk-promo__link-wrapper--mute {
+  background-color: transparent;
+  box-shadow: none;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    box-shadow: none;
+    outline: nhsuk-spacing(1) solid $nhsuk-focus-color;
+    outline-offset: nhsuk-spacing(1) + nhsuk-spacing(2);
+  }
+
+  .nhsuk-promo__content {
+      padding: nhsuk-spacing(0);
   }
 }
