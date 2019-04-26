@@ -7,6 +7,7 @@
 
 // Wagtail components
 @import 'components/video';
+@import 'components/guide';
 
 // Used to highlight the sections of the page
 .layout-example {
@@ -95,4 +96,10 @@ h1 + .nhsuk-lede-text--small {
   .nhsuk-promo__content {
       padding: nhsuk-spacing(0);
   }
+}
+
+
+// Default image styling
+img {
+  max-width: 100%;
 }
