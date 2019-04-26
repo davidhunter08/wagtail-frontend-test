@@ -106,10 +106,11 @@
 
 .guides-nav__contents {
   background-color: $color_nhsuk-white;
-  border-bottom: 2px solid $nhsuk-border-color;
+  border-bottom: 1px solid $nhsuk-border-color;
   color: $color_nhsuk-blue;
   display: none;
   padding: nhsuk-spacing(3);
+  color:red;
 
   @include mq($until: desktop) {
     border-bottom: 1px solid $color_nhsuk-grey-5;
