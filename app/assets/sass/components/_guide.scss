@@ -137,11 +137,14 @@
 }
 
 .guides-nav__item--selected .guides-nav__label {
-  border-bottom: 1px solid $color_nhsuk-grey-5;
+  @include mq($until: desktop) {
+    border-bottom: 1px solid $color_nhsuk-grey-5;
+  }
 }
 
 .guides-nav__sub-nav {
-  padding: nhsuk-spacing(3) 0;
+  @include nhsuk-responsive-padding(4, "bottom");
+  @include nhsuk-responsive-padding(4, "top");
 }
 
 .guides-nav__item--selected .guides-nav__contents {
@@ -152,9 +155,12 @@
   @include top-and-bottom;
 
   background: $color_nhsuk-grey-5;
-  margin-bottom: nhsuk-spacing(3);
   padding: nhsuk-spacing(4);
   width: 100%;
+
+  @include mq($until: desktop) {
+    margin-bottom: nhsuk-spacing(3);
+  }
 }
 
 .guides-nav__sub-nav,
