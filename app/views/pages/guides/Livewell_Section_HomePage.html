@@ -1,1 +1,100 @@
-https://www.nhs.uk/live-well/
+{% extends 'layouts/layout-nhsuk-full-width.html' %}
+
+{% block pageTitle %}
+  Livewell_Section_HomePage
+{% endblock %}
+
+{% block content_page_heading %}
+  <h1>Live Well</h1>
+
+  <p class="nhsuk-lede-text">Advice, tips and tools to help you make the best choices about your health and wellbeing</p>
+{% endblock %}
+
+{% block content_full_width %}
+
+<div class="nhsuk-grid-row nhsuk-promo-group">
+  <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+    {{ promo({
+      "href": "/pages/guides/Livewell_Page",
+      "imgURL": "https://assets.nhs.uk/prod/images/A_0218_healthy-eating-main_BATM01_copy.width-690.jpg",
+      "heading": "Eat Well",
+      "description": "All you need to know about the major food groups and a healthy, balanced diet"
+    }) }}
+  </div>
+  <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+    {{ promo({
+      "href": "/pages/guides/Livewell_Page",
+      "imgURL": "https://assets.nhs.uk/prod/images/A_0218_healthy-weight-main_M24ENF.width-690.jpg",
+      "heading": "Healthy weight",
+      "description": "Check your BMI using our healthy weight calculator and find out if you're a healthy weight"
+    }) }}
+  </div>
+  <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+    {{ promo({
+      "href": "/pages/guides/Livewell_Page",
+      "imgURL": "https://assets.nhs.uk/prod/images/A_0218_exercise-main_FKW1X7.width-690.jpg",
+      "heading": "Exercise",
+      "description": "Programmes, workouts and tips to get you moving and improve your fitness and wellbeing"
+    }) }}
+  </div>
+</div>
+
+<div class="nhsuk-grid-row nhsuk-promo-group">
+  <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+    {{ promo({
+      "href": "/pages/guides/Livewell_Page",
+      "imgURL": "https://assets.nhs.uk/prod/images/A_0218_sleep-main_FWWNPR.width-392.jpg",
+      "heading": "Sleep and tiredness",
+      "description": "Find out how to sleep well and the common lifestyle factors that are making you tired"
+    }) }}
+  </div>
+  <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+    {{ promo({
+      "href": "/pages/guides/Livewell_Page",
+      "imgURL": "https://assets.nhs.uk/prod/images/A_0218_sexual-health-main_HG8H7H.width-690.jpg",
+      "heading": "Sexual health",
+      "description": "Everything you need to know about sexual health, including contraception, STIs and good sex"
+    }) }}
+  </div>
+  <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+    {{ promo({
+      "href": "/pages/guides/Livewell_Page",
+      "imgURL": "https://assets.nhs.uk/prod/images/A_0218_alcohol-support-main__D88JWB.width-392.jpg",
+      "heading": "Alcohol support",
+      "description": "Find out the health benefits of reducing your alcohol intake and get tips on cutting down"
+    }) }}
+  </div>
+</div>
+
+<div class="nhsuk-grid-row nhsuk-promo-group">
+  <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+    {{ promo({
+      "href": "/pages/guides/Livewell_Page",
+      "imgURL": "https://assets.nhs.uk/prod/images/A_0218_quit-smoking_FR0Y98.width-392.jpg",
+      "heading": "Quit smoking",
+      "description": "Learn about the benefits of quitting smoking, including better health and increased fertility"
+    }) }}
+  </div>
+  <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+    {{ promo({
+      "href": "/pages/guides/Livewell_Page",
+      "imgURL": "https://assets.nhs.uk/prod/images/A_0318_healthy-body-main_E59H23.width-392.jpg",
+      "heading": "Healthy body",
+      "description": "Get some practical information and advice for keeping your body in tip-top health"
+    }) }}
+  </div>
+  <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+    {{ promo({
+      "href": "/pages/guides/Livewell_Page",
+      "imgURL": "https://assets.nhs.uk/prod/images/T_0917_moodzone_527900916.width-690.jpg",
+      "heading": "Moodzone",
+      "description": "Practical advice, tools and audio guides to help you feel mentally and emotionally better"
+    }) }}
+  </div>
+</div>
+
+
+{% endblock %}
+
+{% block content_one_third %}
+{% endblock %}

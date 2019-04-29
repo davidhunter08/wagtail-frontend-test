@@ -98,6 +98,11 @@
     color: $color_nhsuk-black;
     font-weight: 600;
 
+    &:hover,
+    &:focus {
+      box-shadow: inset 0 0 0 4px $nhsuk-focus-color;
+    }
+
     &:visited {
       color: $color_nhsuk-black;
     }
@@ -169,4 +174,8 @@
     float: left;
     width: 50%;
   }
+}
+
+.wag-guide-image {
+  @include nhsuk-responsive-margin(4, "bottom");
 }

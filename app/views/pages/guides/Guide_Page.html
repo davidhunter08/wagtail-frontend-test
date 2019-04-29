@@ -1,1 +1,820 @@
 https://www.nhs.uk/conditions/pregnancy-and-baby/
+{% extends 'layouts/layout-guide.html' %}
+
+{% block pageTitle %}
+  Guide_Page_Section
+{% endblock %}
+
+{% block content_page_heading %}
+
+    <h1>
+      Your pregnancy and baby guide
+    </h1>
+
+    <div id="page-nav" class="tab-navigation guides-nav" role="navigation" aria-label="Main menu">
+
+      <h2 class="nhsuk-u-visually-hidden" aria-hidden="true">Main navigation</h2>
+
+      <ul>
+
+        <li class="guides-nav__item">
+
+          <a href="?tabname=getting-pregnant" data-tabname="getting-pregnant" class="guides-nav__label">
+            Getting pregnant
+          </a>
+
+          <div class="guides-nav__contents">
+
+            <div class="guides-nav__sub-nav">
+
+              {{ details({
+                "classes": "nhsuk-u-margin-bottom-2",
+                "text": "Secrets to success",
+                "HTML": "
+                <ul class='nhsuk-list'>
+                  <li><a href='#'>Link one</a></li>
+                  <li><a href='#'>Link two</a></li>
+                  <li><a href='#'>Link three</a></li>
+                </ul>
+                "
+              }) }}
+
+              {{ details({
+                "classes": "nhsuk-u-margin-bottom-2",
+                "text": "Am I pregnant?",
+                "HTML": "
+                <ul class='nhsuk-list'>
+                  <li><a href='#'>Link one</a></li>
+                  <li><a href='#'>Link two</a></li>
+                  <li><a href='#'>Link three</a></li>
+                  <li><a href='#'>Link four</a></li>
+                  <li><a href='#'>Link five</a></li>
+                  <li><a href='#'>Link six</a></li>
+                </ul>
+                "
+              }) }}
+
+              {{ details({
+                "classes": "nhsuk-u-margin-bottom-2",
+                "text": "Problems",
+                "HTML": "
+                <ul class='nhsuk-list'>
+                  <li><a href='#'>Link one</a></li>
+                  <li><a href='#'>Link two</a></li>
+                  <li><a href='#'>Link three</a></li>
+                  <li><a href='#'>Link four</a></li>
+                  <li><a href='#'>Link five</a></li>
+                  <li><a href='#'>Link six</a></li>
+                  <li><a href='#'>Link seven</a></li>
+                  <li><a href='#'>Link eight</a></li>
+                  <li><a href='#'>Link nine</a></li>
+                  <li><a href='#'>Link ten</a></li>
+                </ul>
+                "
+              }) }}
+
+            </div>
+
+            <div class="guides-nav__feature-box">
+              
+              <ul class="nhsuk-list">
+
+                <li>
+                  <a href="https://www.nhs.uk/conditions/pregnancy-and-baby/due-date-calculator/">
+                    Work out your due date
+                  </a>
+                </li>
+                <li>
+                  <a href="/conditions/pregnancy-and-baby/when-pregnancy-goes-wrong/">
+                    When pregnancy goes wrong
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.nhs.uk/start4life/signups/new">
+                    Sign up for weekly pregnancy emails
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+            
+            <div class="clearfix"></div>
+
+          </div>
+
+        </li>
+
+        <li class="guides-nav__item">
+
+            <a href="?tabname=im-pregnant" data-tabname="im-pregnant" class="guides-nav__label">
+              I'm pregnant
+            </a>
+
+            <div class="guides-nav__contents">
+
+              <div class="guides-nav__sub-nav">
+
+                <ul class="nhsuk-list nhsuk-u-margin-bottom-2">
+
+                  <li> 
+                    <a href="/live-well/eat-well/common-digestive-problems-and-how-to-treat-them/">
+                      Common digestive problems and what to do
+                    </a>  
+                  </li>
+                  <li> 
+                    <a href="/live-well/eat-well/good-foods-to-help-your-digestion/">
+                    Good foods to help your digestion
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/live-well/eat-well/five-lifestyle-tips-for-a-healthy-tummy/">
+                      Tips for a healthy tummy
+                    </a> 
+                  </li>
+                  <li>
+                    <a href="/live-well/eat-well/remedies-for-bloating-and-wind/">
+                      Beat the bloat
+                    </a>
+                  </li>
+                  <li>      
+                    <a href="/live-well/eat-well/should-you-cut-out-bread-to-stop-bloating/">
+                      Should you cut out bread to stop bloating?
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="guides-nav__feature-box">
+                
+                <ul class="nhsuk-list">
+
+                  <li>
+                    <a href="https://www.nhs.uk/conditions/pregnancy-and-baby/due-date-calculator/">
+                      Work out your due date
+                    </a>
+                  </li>
+                </ul>
+
+              </div>
+
+              <div class="clearfix"></div>
+
+            </div>
+
+          </li>
+
+          <li class="guides-nav__item">
+
+            <a href="?tabname=labour-and-birth" data-tabname="labour-and-birth" class="guides-nav__label">
+              Labour and birth
+            </a>
+
+            <div class="guides-nav__contents">
+
+              <div class="guides-nav__sub-nav">
+
+                {{ details({
+                  "classes": "nhsuk-u-margin-bottom-2",
+                  "text": "Secrets to success",
+                  "HTML": "
+                  <ul class='nhsuk-list'>
+                    <li><a href='#'>Link one</a></li>
+                    <li><a href='#'>Link two</a></li>
+                    <li><a href='#'>Link three</a></li>
+                  </ul>
+                  "
+                }) }}
+
+                {{ details({
+                  "classes": "nhsuk-u-margin-bottom-2",
+                  "text": "Am I pregnant?",
+                  "HTML": "
+                  <ul class='nhsuk-list'>
+                    <li><a href='#'>Link one</a></li>
+                    <li><a href='#'>Link two</a></li>
+                    <li><a href='#'>Link three</a></li>
+                    <li><a href='#'>Link four</a></li>
+                    <li><a href='#'>Link five</a></li>
+                    <li><a href='#'>Link six</a></li>
+                  </ul>
+                  "
+                }) }}
+
+                {{ details({
+                  "classes": "nhsuk-u-margin-bottom-2",
+                  "text": "Problems",
+                  "HTML": "
+                  <ul class='nhsuk-list'>
+                    <li><a href='#'>Link one</a></li>
+                    <li><a href='#'>Link two</a></li>
+                    <li><a href='#'>Link three</a></li>
+                    <li><a href='#'>Link four</a></li>
+                    <li><a href='#'>Link five</a></li>
+                    <li><a href='#'>Link six</a></li>
+                    <li><a href='#'>Link seven</a></li>
+                    <li><a href='#'>Link eight</a></li>
+                    <li><a href='#'>Link nine</a></li>
+                    <li><a href='#'>Link ten</a></li>
+                  </ul>
+                  "
+                }) }}
+
+                {{ details({
+                  "classes": "nhsuk-u-margin-bottom-2",
+                  "text": "Secrets to success",
+                  "HTML": "
+                  <ul class='nhsuk-list'>
+                    <li><a href='#'>Link one</a></li>
+                    <li><a href='#'>Link two</a></li>
+                    <li><a href='#'>Link three</a></li>
+                  </ul>
+                  "
+                }) }}
+
+                {{ details({
+                  "classes": "nhsuk-u-margin-bottom-2",
+                  "text": "Am I pregnant?",
+                  "HTML": "
+                  <ul class='nhsuk-list'>
+                    <li><a href='#'>Link one</a></li>
+                    <li><a href='#'>Link two</a></li>
+                    <li><a href='#'>Link three</a></li>
+                    <li><a href='#'>Link four</a></li>
+                    <li><a href='#'>Link five</a></li>
+                    <li><a href='#'>Link six</a></li>
+                  </ul>
+                  "
+                }) }}
+
+                {{ details({
+                  "classes": "nhsuk-u-margin-bottom-2",
+                  "text": "Problems",
+                  "HTML": "
+                  <ul class='nhsuk-list'>
+                    <li><a href='#'>Link one</a></li>
+                    <li><a href='#'>Link two</a></li>
+                    <li><a href='#'>Link three</a></li>
+                    <li><a href='#'>Link four</a></li>
+                    <li><a href='#'>Link five</a></li>
+                    <li><a href='#'>Link six</a></li>
+                    <li><a href='#'>Link seven</a></li>
+                    <li><a href='#'>Link eight</a></li>
+                    <li><a href='#'>Link nine</a></li>
+                    <li><a href='#'>Link ten</a></li>
+                  </ul>
+                  "
+                }) }}
+
+                {{ details({
+                  "classes": "nhsuk-u-margin-bottom-2",
+                  "text": "Secrets to success",
+                  "HTML": "
+                  <ul class='nhsuk-list'>
+                    <li><a href='#'>Link one</a></li>
+                    <li><a href='#'>Link two</a></li>
+                    <li><a href='#'>Link three</a></li>
+                  </ul>
+                  "
+                }) }}
+
+                {{ details({
+                  "classes": "nhsuk-u-margin-bottom-2",
+                  "text": "Am I pregnant?",
+                  "HTML": "
+                  <ul class='nhsuk-list'>
+                    <li><a href='#'>Link one</a></li>
+                    <li><a href='#'>Link two</a></li>
+                    <li><a href='#'>Link three</a></li>
+                    <li><a href='#'>Link four</a></li>
+                    <li><a href='#'>Link five</a></li>
+                    <li><a href='#'>Link six</a></li>
+                  </ul>
+                  "
+                }) }}
+
+                {{ details({
+                  "classes": "nhsuk-u-margin-bottom-2",
+                  "text": "Problems",
+                  "HTML": "
+                  <ul class='nhsuk-list'>
+                    <li><a href='#'>Link one</a></li>
+                    <li><a href='#'>Link two</a></li>
+                    <li><a href='#'>Link three</a></li>
+                    <li><a href='#'>Link four</a></li>
+                    <li><a href='#'>Link five</a></li>
+                    <li><a href='#'>Link six</a></li>
+                    <li><a href='#'>Link seven</a></li>
+                    <li><a href='#'>Link eight</a></li>
+                    <li><a href='#'>Link nine</a></li>
+                    <li><a href='#'>Link ten</a></li>
+                  </ul>
+                  "
+                }) }}
+
+                {{ details({
+                  "classes": "nhsuk-u-margin-bottom-2",
+                  "text": "Secrets to success",
+                  "HTML": "
+                  <ul class='nhsuk-list'>
+                    <li><a href='#'>Link one</a></li>
+                    <li><a href='#'>Link two</a></li>
+                    <li><a href='#'>Link three</a></li>
+                  </ul>
+                  "
+                }) }}
+
+                {{ details({
+                  "classes": "nhsuk-u-margin-bottom-2",
+                  "text": "Am I pregnant?",
+                  "HTML": "
+                  <ul class='nhsuk-list'>
+                    <li><a href='#'>Link one</a></li>
+                    <li><a href='#'>Link two</a></li>
+                    <li><a href='#'>Link three</a></li>
+                    <li><a href='#'>Link four</a></li>
+                    <li><a href='#'>Link five</a></li>
+                    <li><a href='#'>Link six</a></li>
+                  </ul>
+                  "
+                }) }}
+
+                {{ details({
+                  "classes": "nhsuk-u-margin-bottom-2",
+                  "text": "Problems",
+                  "HTML": "
+                  <ul class='nhsuk-list'>
+                    <li><a href='#'>Link one</a></li>
+                    <li><a href='#'>Link two</a></li>
+                    <li><a href='#'>Link three</a></li>
+                    <li><a href='#'>Link four</a></li>
+                    <li><a href='#'>Link five</a></li>
+                    <li><a href='#'>Link six</a></li>
+                    <li><a href='#'>Link seven</a></li>
+                    <li><a href='#'>Link eight</a></li>
+                    <li><a href='#'>Link nine</a></li>
+                    <li><a href='#'>Link ten</a></li>
+                  </ul>
+                  "
+                }) }}
+
+                {{ details({
+                  "classes": "nhsuk-u-margin-bottom-2",
+                  "text": "Secrets to success",
+                  "HTML": "
+                  <ul class='nhsuk-list'>
+                    <li><a href='#'>Link one</a></li>
+                    <li><a href='#'>Link two</a></li>
+                    <li><a href='#'>Link three</a></li>
+                  </ul>
+                  "
+                }) }}
+
+                {{ details({
+                  "classes": "nhsuk-u-margin-bottom-2",
+                  "text": "Am I pregnant?",
+                  "HTML": "
+                  <ul class='nhsuk-list'>
+                    <li><a href='#'>Link one</a></li>
+                    <li><a href='#'>Link two</a></li>
+                    <li><a href='#'>Link three</a></li>
+                    <li><a href='#'>Link four</a></li>
+                    <li><a href='#'>Link five</a></li>
+                    <li><a href='#'>Link six</a></li>
+                  </ul>
+                  "
+                }) }}
+
+                {{ details({
+                  "classes": "nhsuk-u-margin-bottom-2",
+                  "text": "Problems",
+                  "HTML": "
+                  <ul class='nhsuk-list'>
+                    <li><a href='#'>Link one</a></li>
+                    <li><a href='#'>Link two</a></li>
+                    <li><a href='#'>Link three</a></li>
+                    <li><a href='#'>Link four</a></li>
+                    <li><a href='#'>Link five</a></li>
+                    <li><a href='#'>Link six</a></li>
+                    <li><a href='#'>Link seven</a></li>
+                    <li><a href='#'>Link eight</a></li>
+                    <li><a href='#'>Link nine</a></li>
+                    <li><a href='#'>Link ten</a></li>
+                  </ul>
+                  "
+                }) }}
+
+            </div>
+                        
+            <div class="guides-nav__feature-box">
+              
+              <ul class="nhsuk-list">
+
+                <li>
+                  <a href="https://www.nhs.uk/conditions/pregnancy-and-baby/due-date-calculator/">
+                    Work out your due date
+                  </a>
+                </li>
+                <li>
+                  <a href="/conditions/pregnancy-and-baby/when-pregnancy-goes-wrong/">
+                    When pregnancy goes wrong
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.nhs.uk/start4life/signups/new">
+                    Sign up for weekly pregnancy emails
+                  </a>
+                </li>
+              </ul>
+
+              </div>
+              
+              <div class="clearfix"></div>
+            </div>
+          </li>
+
+          <li class="guides-nav__item">
+
+            <a href="?tabname=your-newborn" data-tabname="your-newborn" class="guides-nav__label">
+              Your newborn
+            </a>
+            
+            <div class="guides-nav__contents">
+   
+              <div class="guides-nav__sub-nav">
+
+                {{ details({
+                  "classes": "nhsuk-u-margin-bottom-2",
+                  "text": "Secrets to success",
+                  "HTML": "
+                  <ul class='nhsuk-list'>
+                    <li><a href='#'>Link one</a></li>
+                    <li><a href='#'>Link two</a></li>
+                    <li><a href='#'>Link three</a></li>
+                  </ul>
+                  "
+                }) }}
+
+                {{ details({
+                  "classes": "nhsuk-u-margin-bottom-2",
+                  "text": "Am I pregnant?",
+                  "HTML": "
+                  <ul class='nhsuk-list'>
+                    <li><a href='#'>Link one</a></li>
+                    <li><a href='#'>Link two</a></li>
+                    <li><a href='#'>Link three</a></li>
+                    <li><a href='#'>Link four</a></li>
+                    <li><a href='#'>Link five</a></li>
+                    <li><a href='#'>Link six</a></li>
+                  </ul>
+                  "
+                }) }}
+
+                {{ details({
+                  "classes": "nhsuk-u-margin-bottom-2",
+                  "text": "Problems",
+                  "HTML": "
+                  <ul class='nhsuk-list'>
+                    <li><a href='#'>Link one</a></li>
+                    <li><a href='#'>Link two</a></li>
+                    <li><a href='#'>Link three</a></li>
+                    <li><a href='#'>Link four</a></li>
+                    <li><a href='#'>Link five</a></li>
+                    <li><a href='#'>Link six</a></li>
+                    <li><a href='#'>Link seven</a></li>
+                    <li><a href='#'>Link eight</a></li>
+                    <li><a href='#'>Link nine</a></li>
+                    <li><a href='#'>Link ten</a></li>
+                  </ul>
+                  "
+                }) }}
+
+              </div>
+            
+              <div class="guides-nav__feature-box">
+                
+                <ul class="nhsuk-list">
+
+                  <li>
+                    <a href="https://www.nhs.uk/conditions/pregnancy-and-baby/due-date-calculator/">
+                      Work out your due date
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/conditions/pregnancy-and-baby/when-pregnancy-goes-wrong/">
+                      When pregnancy goes wrong
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.nhs.uk/start4life/signups/new">
+                      Sign up for weekly pregnancy emails
+                    </a>
+                  </li>
+                </ul>
+
+              </div>
+
+              <div class="clearfix"></div>
+
+            </div>
+
+          </li>
+
+          <li class="guides-nav__item">
+            <a href="?tabname=babies-and-toddlers" data-tabname="babies-and-toddlers" class="guides-nav__label">
+              Babies and toddlers
+            </a>
+
+            <div class="guides-nav__contents">
+              
+              <div class="guides-nav__sub-nav">
+              
+                {{ details({
+                  "classes": "nhsuk-u-margin-bottom-2",
+                  "text": "Weaning and solid foods",
+                  "HTML": "
+                  <ul class='nhsuk-list'>
+                    <li><a href='#'>Link one</a></li>
+                    <li><a href='#'>Link two</a></li>
+                    <li><a href='#'>Link three</a></li>
+                  </ul>
+                  "
+                }) }}
+
+                {{ details({
+                  "classes": "nhsuk-u-margin-bottom-2",
+                  "text": "Teething",
+                  "HTML": "
+                  <ul class='nhsuk-list'>
+                    <li><a href='#'>Link one</a></li>
+                    <li><a href='#'>Link two</a></li>
+                    <li><a href='#'>Link three</a></li>
+                  </ul>
+                  "
+                }) }}
+
+                {{ details({
+                  "classes": "nhsuk-u-margin-bottom-2",
+                  "text": "Baby health and care",
+                  "HTML": "
+                  <ul class='nhsuk-list'>
+                    <li><a href='#'>Link one</a></li>
+                    <li><a href='#'>Link two</a></li>
+                    <li><a href='#'>Link three</a></li>
+                  </ul>
+                  "
+                }) }}
+
+                {{ details({
+                  "classes": "nhsuk-u-margin-bottom-2",
+                  "text": "Learning, play and behaviour",
+                  "HTML": "
+                  <ul class='nhsuk-list'>
+                    <li><a href='#'>Link one</a></li>
+                    <li><a href='#'>Link two</a></li>
+                    <li><a href='#'>Link three</a></li>
+                  </ul>
+                  "
+                }) }}
+
+                {{ details({
+                  "classes": "nhsuk-u-margin-bottom-2",
+                  "text": "Twins",
+                  "HTML": "
+                  <ul class='nhsuk-list'>
+                    <li><a href='#'>Link one</a></li>
+                    <li><a href='#'>Link two</a></li>
+                    <li><a href='#'>Link three</a></li>
+                  </ul>
+                  "
+                }) }}
+
+                {{ details({
+                  "classes": "nhsuk-u-margin-bottom-2",
+                  "text": "Safety and accidents",
+                  "HTML": "
+                  <ul class='nhsuk-list'>
+                    <li><a href='#'>Link one</a></li>
+                    <li><a href='#'>Link two</a></li>
+                    <li><a href='#'>Link three</a></li>
+                  </ul>
+                  "
+                }) }}
+
+                {{ details({
+                  "classes": "nhsuk-u-margin-bottom-2",
+                  "text": "Parenting",
+                  "HTML": "
+                  <ul class='nhsuk-list'>
+                    <li><a href='#'>Link one</a></li>
+                    <li><a href='#'>Link two</a></li>
+                    <li><a href='#'>Link three</a></li>
+                  </ul>
+                  "
+                }) }}
+
+              </div>
+              
+              <div class="clearfix"></div>
+
+            </div>
+
+          </li>
+
+         </ul>
+
+        <div class="guides-nav__spacer" style="height: 0px;"></div>
+
+      </div>
+
+{% endblock %}
+
+{% block content_two_thirds %}
+
+          <img class="wag-guide-image" alt="" src="https://assets.nhs.uk/prod/images/US_1118_maternity_hero_117344_JFtU67w.width-690.jpg" sizes="(min-width: 1020px) 690px, 100vw" srcset="https://assets.nhs.uk/prod/images/US_1118_maternity_hero_117344_JFtU67w.width-345.jpg 345w, https://assets.nhs.uk/prod/images/US_1118_maternity_hero_117344_JFtU67w.width-690.jpg 690w">
+        
+
+        
+        
+          
+
+<section id="">
+  
+      
+          
+
+
+
+<p><strong>Am I pregnant?&nbsp;What should I be eating?&nbsp;Is it normal to be this tired? How can I help my partner during labour?</strong></p>
+
+<p>Whatever you want to know&nbsp;about getting pregnant, being pregnant or caring for&nbsp;your new baby, you should find it here. </p>
+
+<p>You'll find detailed week-by-week guides and lots of expert videos, parents' tips&nbsp;and interactive tools to&nbsp;explore.</p>
+
+<p>Before you start, why not:</p>
+
+<ul>
+<li>work out&nbsp;when your baby is due&nbsp;with our&nbsp;<a href="/conditions/pregnancy-and-baby/due-date-calculator/">due date calculator</a>&nbsp;&nbsp;&nbsp; </li>
+<li>download a <a href="https://www.nhs.uk/conditions/pregnancy-and-baby/how-to-make-birth-plan/">birth plan template</a> to fill in and save</li>
+</ul>
+
+
+
+
+      
+  
+</section>
+
+        
+          
+
+<section id="want-to-know-if-youre-really-pregnant">
+  
+      
+          
+
+
+
+<h2>Want to know if you're really pregnant?</h2>
+
+<p>Got any of the <a href="/conditions/pregnancy-and-baby/signs-and-symptoms-pregnancy/">signs and symptoms of pregnancy</a>? Read our guide on <a href="/conditions/pregnancy-and-baby/finding-out-pregnant/">finding out if you're pregnant</a>.</p>
+
+<p>Find out <a href="/conditions/pregnancy-and-baby/pregnancy-test/">about pregnancy tests</a>, or your next steps if&nbsp;you've had a <a href="/conditions/pregnancy-and-baby/antenatal-midwife-care-pregnant/">positive pregnancy test</a>.</p>
+
+<p>Also, find out more about getting <a href="https://www.nhs.uk/common-health-questions/pregnancy/how-long-does-it-usually-take-to-get-pregnant/">help if you're not getting pregnant</a>.</p>
+
+
+
+
+      
+  
+</section>
+
+        
+          
+
+<section id="keeping-well-in-pregnancy">
+  
+      
+          
+
+
+
+<h2>Keeping well in pregnancy</h2>
+
+<ul>
+<li>everything you need to know about a&nbsp;<a href="/conditions/pregnancy-and-baby/healthy-pregnancy-diet/">healthy pregnancy diet</a> and&nbsp;<a href="/conditions/pregnancy-and-baby/vitamins-minerals-supplements-pregnant/">supplements in pregnancy</a></li>
+<li>smoking and drinking can harm an unborn baby&nbsp;–&nbsp;read our&nbsp;<a href="/conditions/pregnancy-and-baby/smoking-pregnant/">stop smoking</a> and&nbsp;<a href="/conditions/pregnancy-and-baby/alcohol-medicines-drugs-pregnant/">alcohol</a> pages&nbsp;for help trying to quit&nbsp; </li>
+</ul>
+
+<h3>Antenatal care and the baby's development</h3>
+
+<ul>
+<li>find out as much as you can about what's happening inside you in the&nbsp;<a href="/conditions/pregnancy-and-baby/pregnancy-weeks-4-5-6-7-8/">first few weeks of pregnancy</a></li>
+<li>how to cope with all those <a href="/conditions/pregnancy-and-baby/common-pregnancy-problems/">common pregnancy problems</a>, like morning sickness, tiredness and headaches&nbsp; </li>
+<li>find out all about the&nbsp;<a href="/conditions/pregnancy-and-baby/ultrasound-anomaly-baby-scans-pregnant/">ultrasound scans</a> and&nbsp;<a href="/conditions/pregnancy-and-baby/antenatal-care-checks-tests/">checks and tests</a> you'll be offered as part of your antenatal care, including <a href="/conditions/pregnancy-and-baby/screening-amniocentesis-downs-syndrome/">screening for Down's syndrome</a></li>
+</ul>
+
+<h3>Vaccinations in pregnancy</h3>
+
+<p>Why it's recommended that women have the <a href="/conditions/pregnancy-and-baby/flu-jab-vaccine-pregnant/">flu vaccine in pregnancy</a> and <a href="/conditions/pregnancy-and-baby/whooping-cough-vaccination-pregnant/">whooping cough vaccine in pregnancy</a>.</p>
+
+
+
+
+      
+  
+</section>
+
+        
+          
+
+<section id="labour-and-birth">
+  
+      
+          
+
+
+
+<h2>Labour and&nbsp;birth</h2>
+
+<p>Find out all you need to know about labour and birth, including <a href="/conditions/pregnancy-and-baby/where-can-i-give-birth/">where you can have your baby</a>&nbsp;– for example, either&nbsp;in a hospital, midwife-led unit, or at home&nbsp;–&nbsp;and what&nbsp;<a href="/conditions/pregnancy-and-baby/pain-relief-labour/">pain relief</a> is available, such as gas and air (entonox) and epidural.</p>
+
+
+
+
+      
+  
+</section>
+
+        
+          
+
+<section id="your-new-baby">
+  
+      
+          
+
+
+
+<h2>Your new baby</h2>
+
+<p>When your baby arrives, you can find advice on all the essentials of baby care, including <a href="/conditions/pregnancy-and-baby/breastfeeding-positioning-attachment/">breastfeeding</a>, <a href="/conditions/pregnancy-and-baby/bottle-feeding-advice/">bottle feeding</a>, <a href="/conditions/pregnancy-and-baby/nappies/">changing nappies</a>, and <a href="/conditions/pregnancy-and-baby/washing-your-baby/">washing your baby</a>. Plus:</p>
+
+<ul>
+<li>find out how to cope with a <a href="/conditions/pregnancy-and-baby/soothing-crying-baby/">crying baby</a> and get tips on settling them into a good <a href="/conditions/pregnancy-and-baby/getting-baby-to-sleep/">sleep</a> routine </li>
+<li>as a&nbsp;new mum, find out&nbsp;about&nbsp;the possible changes to <a href="/conditions/pregnancy-and-baby/your-body-after-childbirth/">your body</a> and <a href="/conditions/pregnancy-and-baby/relationships-after-a-baby/">your relationships</a>, and know how to spot the symptoms of <a href="/conditions/pregnancy-and-baby/feeling-depressed-after-birth/">postnatal depression</a></li>
+<li>if you have twins or multiples, find out about <a href="/conditions/pregnancy-and-baby/feeding-multiples/">feeding</a>, <a href="/conditions/pregnancy-and-baby/multiples-out-and-about/">getting out and about</a>, and <a href="/conditions/pregnancy-and-baby/multiples-and-sleep/">sleep issues</a></li>
+</ul>
+
+<h3>Feeding, teething and tantrums</h3>
+
+<ul>
+<li>find out about all aspects of <a href="/conditions/pregnancy-and-baby/being-a-parent/">parenting</a>, including <a href="/conditions/pregnancy-and-baby/services-support-for-parents/">support and services</a>, keeping fit, and going back to work </li>
+<li>know the <a href="/conditions/pregnancy-and-baby/spotting-signs-serious-illness/">signs of serious illness</a> in babies and the symptoms of <a href="/conditions/pregnancy-and-baby/infectious-illnesses-children/">infectious illnesses</a> such as chickenpox </li>
+<li>find out how to keep your <a href="/conditions/pregnancy-and-baby/baby-safety-tips/">baby safe</a> and <a href="/conditions/pregnancy-and-baby/accidents-what-to-do/">what to do if they have an accident</a></li>
+<li>at&nbsp;six months old your baby will need&nbsp;to <a href="/conditions/pregnancy-and-baby/solid-foods-weaning/">start&nbsp;solid foods</a>, so be prepared with our weaning tips and first food ideas </li>
+<li>as your baby becomes a toddler, get tips on <a href="/conditions/pregnancy-and-baby/teething-and-tooth-care/">teething</a>, the <a href="/conditions/pregnancy-and-baby/why-play-is-important/">importance of play</a>, <a href="/conditions/pregnancy-and-baby/temper-tantrums/">temper tantrums</a> and <a href="/conditions/pregnancy-and-baby/potty-training-tips/">potty training</a></li>
+</ul>
+
+
+
+
+      
+  
+</section>
+
+        
+          
+
+<section id="want-to-share-your-pregnancy-and-baby-experiences">
+  
+      
+          
+
+
+
+<h2>Want to share your pregnancy and baby experiences?</h2>
+
+<p>Connect with others who can offer practical and emotional support about any pregnancy and baby issues on the <a href="http://healthunlocked.com/nct">HealthUnlocked NCT forum</a>.</p>
+
+
+
+
+      
+  
+</section>
+
+        
+
+{{ reviewDate({
+  "lastReview": "12 February 2017",
+  "nextReview": "1 February 2020"
+}) }}
+
+
+{% endblock %}
+
+{% block content_one_third %}
+
+{% endblock %}

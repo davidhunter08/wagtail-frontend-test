@@ -1,1 +1,588 @@
-https://www.nhs.uk/live-well/eat-well/
+{% extends 'layouts/layout-guide.html' %}
+
+{% block pageTitle %}
+  Livewell_Page
+{% endblock %}
+
+{% block content_page_heading %}
+
+    <h1>
+      <span role="text">Eating a balanced diet <span class="nhsuk-caption-xl nhsuk-caption--bottom"><span class="nhsuk-u-visually-hidden"> -</span> Eat well</span></span>
+    </h1>
+
+    <div id="page-nav" class="tab-navigation guides-nav" role="navigation" aria-label="Main menu">
+
+      <h2 class="nhsuk-u-visually-hidden" aria-hidden="true">Main navigation</h2>
+
+      <ul>
+
+        <li class="guides-nav__item">
+
+          <a href="?tabname=getting-pregnant" data-tabname="getting-pregnant" class="guides-nav__label">
+            Food and diet
+          </a>
+
+          <div class="guides-nav__contents">
+
+            <div class="guides-nav__sub-nav">
+
+              {{ details({
+                "classes": "nhsuk-u-margin-bottom-2",
+                "text": "Nutrition and food groups",
+                "HTML": "
+                <ul class='nhsuk-list'>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link one</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link two</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link three</a></li>
+                </ul>
+                "
+              }) }}
+
+              {{ details({
+                "classes": "nhsuk-u-margin-bottom-2",
+                "text": "5 A Day",
+                "HTML": "
+                <ul class='nhsuk-list'>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link one</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link two</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link three</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link four</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link five</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link six</a></li>
+                </ul>
+                "
+              }) }}
+
+              {{ details({
+                "classes": "nhsuk-u-margin-bottom-2",
+                "text": "Food facts",
+                "HTML": "
+                <ul class='nhsuk-list'>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link one</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link two</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link three</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link four</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link five</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link six</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link seven</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link eight</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link nine</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link ten</a></li>
+                </ul>
+                "
+              }) }}
+
+              {{ details({
+                "classes": "nhsuk-u-margin-bottom-2",
+                "text": "Eating on a budget",
+                "HTML": "
+                <ul class='nhsuk-list'>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link one</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link two</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link three</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link four</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link five</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link six</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link seven</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link eight</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link nine</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link ten</a></li>
+                </ul>
+                "
+              }) }}
+
+              {{ details({
+                "classes": "nhsuk-u-margin-bottom-2",
+                "text": "Food safety",
+                "HTML": "
+                <ul class='nhsuk-list'>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link one</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link two</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link three</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link four</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link five</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link six</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link seven</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link eight</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link nine</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link ten</a></li>
+                </ul>
+                "
+              }) }}
+
+              {{ details({
+                "classes": "nhsuk-u-margin-bottom-2",
+                "text": "Vegetarians and vegans",
+                "HTML": "
+                <ul class='nhsuk-list'>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link one</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link two</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link three</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link four</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link five</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link six</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link seven</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link eight</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link nine</a></li>
+                  <li><a href='/pages/guides/Livewell_Page_Section'>Link ten</a></li>
+                </ul>
+                "
+              }) }}
+
+            </div>
+
+            <div class="guides-nav__feature-box">
+              
+              <ul class="nhsuk-list">
+
+                <li>
+                  <a href="https://www.nhs.uk/conditions/pregnancy-and-baby/due-date-calculator/">
+                    Calorie checker
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+            
+            <div class="clearfix"></div>
+
+          </div>
+
+        </li>
+
+        <li class="guides-nav__item">
+
+            <a href="?tabname=im-pregnant" data-tabname="im-pregnant" class="guides-nav__label">
+              Recipes and tips
+            </a>
+
+            <div class="guides-nav__contents">
+
+              <div class="guides-nav__sub-nav">
+
+                {{ details({
+                  "classes": "nhsuk-u-margin-bottom-2",
+                  "text": "Healthy recipes",
+                  "HTML": "
+                  <ul class='nhsuk-list'>
+                    <li><a href='/pages/guides/Livewell_Page_Section'>Link one</a></li>
+                    <li><a href='/pages/guides/Livewell_Page_Section'>Link two</a></li>
+                    <li><a href='/pages/guides/Livewell_Page_Section'>Link three</a></li>
+                    <li><a href='/pages/guides/Livewell_Page_Section'>Link four</a></li>
+                    <li><a href='/pages/guides/Livewell_Page_Section'>Link five</a></li>
+                    <li><a href='/pages/guides/Livewell_Page_Section'>Link six</a></li>
+                    <li><a href='/pages/guides/Livewell_Page_Section'>Link seven</a></li>
+                    <li><a href='/pages/guides/Livewell_Page_Section'>Link eight</a></li>
+                    <li><a href='/pages/guides/Livewell_Page_Section'>Link nine</a></li>
+                    <li><a href='/pages/guides/Livewell_Page_Section'>Link ten</a></li>
+                  </ul>
+                  "
+                }) }}
+
+                {{ details({
+                  "classes": "nhsuk-u-margin-bottom-2",
+                  "text": "Food tips",
+                  "HTML": "
+                  <ul class='nhsuk-list'>
+                    <li><a href='/pages/guides/Livewell_Page_Section'>Link one</a></li>
+                    <li><a href='/pages/guides/Livewell_Page_Section'>Link two</a></li>
+                    <li><a href='/pages/guides/Livewell_Page_Section'>Link three</a></li>
+                    <li><a href='/pages/guides/Livewell_Page_Section'>Link four</a></li>
+                    <li><a href='/pages/guides/Livewell_Page_Section'>Link five</a></li>
+                    <li><a href='/pages/guides/Livewell_Page_Section'>Link six</a></li>
+                    <li><a href='/pages/guides/Livewell_Page_Section'>Link seven</a></li>
+                    <li><a href='/pages/guides/Livewell_Page_Section'>Link eight</a></li>
+                    <li><a href='/pages/guides/Livewell_Page_Section'>Link nine</a></li>
+                    <li><a href='/pages/guides/Livewell_Page_Section'>Link ten</a></li>
+                  </ul>
+                  "
+                }) }}
+
+              </div>
+
+              <div class="guides-nav__feature-box">
+                
+                <ul class="nhsuk-list">
+
+                  <li>
+                    <a href="https://www.nhs.uk/conditions/pregnancy-and-baby/due-date-calculator/">
+                      One You Easy Meals app
+                    </a>
+                  </li>
+                </ul>
+
+              </div>
+
+              <div class="clearfix"></div>
+
+            </div>
+
+          </li>
+
+          <li class="guides-nav__item">
+
+            <a href="?tabname=labour-and-birth" data-tabname="labour-and-birth" class="guides-nav__label">
+              Digestive health
+            </a>
+
+            <div class="guides-nav__contents">
+
+              <div class="guides-nav__sub-nav">
+
+                <ul class="nhsuk-list nhsuk-u-margin-bottom-2">
+
+                  <li> 
+                    <a href="/live-well/eat-well/common-digestive-problems-and-how-to-treat-them/">
+                      Common digestive problems and what to do
+                    </a>  
+                  </li>
+                  <li> 
+                    <a href="/live-well/eat-well/good-foods-to-help-your-digestion/">
+                    Good foods to help your digestion
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/live-well/eat-well/five-lifestyle-tips-for-a-healthy-tummy/">
+                      Tips for a healthy tummy
+                    </a> 
+                  </li>
+                  <li>
+                    <a href="/live-well/eat-well/remedies-for-bloating-and-wind/">
+                      Beat the bloat
+                    </a>
+                  </li>
+                  <li>      
+                    <a href="/live-well/eat-well/should-you-cut-out-bread-to-stop-bloating/">
+                      Should you cut out bread to stop bloating?
+                    </a>
+                  </li>
+                </ul>
+
+            </div>
+              
+            <div class="clearfix"></div>
+          </div>
+        </li>
+
+        </ul>
+
+      <div class="guides-nav__spacer" style="height: 0px;"></div>
+
+    </div>
+
+{% endblock %}
+
+{% block content_two_thirds %}
+
+ <img class="wag-guide-image" alt="A_0218_healthy-eating_BATM01 copy.jpg" src="https://assets.nhs.uk/prod/images/A_0218_healthy-eating-main_BATM01_copy.width-690.jpg" sizes="(min-width: 1020px) 690px, 100vw" srcset="https://assets.nhs.uk/prod/images/A_0218_healthy-eating-main_BATM01_copy.width-345.jpg 345w, https://assets.nhs.uk/prod/images/A_0218_healthy-eating-main_BATM01_copy.width-690.jpg 690w">
+          
+
+          
+          
+            
+
+<section id="">
+  
+
+<p><strong>Eating a healthy, balanced diet&nbsp;is an important part of maintaining good health, and can help you feel your best.</strong></p>
+
+<p>This means eating&nbsp;a wide variety&nbsp;of foods in the right proportions, and consuming the right amount of food and drink to achieve and maintain a healthy body weight.</p>
+
+<p>This page covers healthy eating advice for the general population. </p>
+
+<p>People with special dietary needs or a medical condition should ask their doctor or a registered dietitian for advice.</p>
+
+
+
+
+      
+  
+</section>
+
+          
+            
+
+<section id="food-groups-in-your-diet">
+  
+      
+          
+
+
+
+<h2>Food groups in your diet</h2>
+
+<p>The <a href="/live-well/eat-well/the-eatwell-guide/">Eatwell Guide</a> shows that to have a healthy, balanced diet, people should try to:</p>
+
+<ul>
+<li>eat at least 5 portions of a variety of fruit and vegetables every day (see <a href="/live-well/eat-well/5-a-day-what-counts/">5 A Day</a>)</li>
+<li>base&nbsp;meals on higher fibre starchy foods like potatoes, bread, rice or pasta</li>
+<li>have some dairy or dairy alternatives (such as soya drinks)</li>
+<li>eat some beans, pulses, fish, eggs, meat and other protein</li>
+<li>choose unsaturated oils and spreads, and eat them in small amounts</li>
+<li><a href="/live-well/eat-well/water-drinks-nutrition/">drink plenty of fluids</a> (at least 6 to 8 glasses a day)</li>
+</ul>
+
+<p>If you're having foods and drinks that are high in fat, salt and sugar, have these less often and in small amounts.</p>
+
+<p>Try to choose a variety of different foods from the 5 main food groups to get a wide range of nutrients. </p>
+
+<p>Most&nbsp;people in the UK&nbsp;eat and drink too many calories, too much saturated fat, sugar and salt, and not enough fruit, vegetables, oily fish&nbsp;or <a href="/live-well/eat-well/how-to-get-more-fibre-into-your-diet/">fibre</a>.</p>
+
+<p>The Eatwell Guide does not apply to children under the age of 2 because they have different nutritional needs.</p>
+
+<p>Between the ages of 2 and 5 years, children should gradually move to eating the same foods as the rest of the family in the proportions shown in the Eatwell Guide.</p>
+
+
+
+
+      
+  
+</section>
+
+          
+            
+
+<section id="fruit-and-vegetables-are-you-getting-your-5-a-day">
+  
+      
+          
+
+
+
+<h2>Fruit&nbsp;and vegetables: are you getting your 5 A Day?</h2>
+
+<p>Fruit and vegetables are&nbsp;a good source of <a href="/conditions/vitamins-and-minerals/">vitamins and minerals</a> and fibre, and should make up just over a third of the food you eat each day. </p>
+
+<p>It's recommended that you eat at least 5 portions of a variety of fruit and vegetables every day. They can be fresh, frozen, canned, dried or juiced.</p>
+
+<p>There's evidence that people who&nbsp;eat at least&nbsp;5 portions of fruit and vegetables a day have a lower risk of heart disease, stroke and some cancers.</p>
+
+<p>Eating&nbsp;5 portions is not as hard as it sounds.</p>
+
+<p>A portion is:</p>
+
+<ul>
+<li>80g of fresh, canned or frozen fruit and vegetables</li>
+<li>30g of dried fruit – which should be kept to mealtimes</li>
+<li>150ml glass of fruit juice or smoothie – but do not have more than 1 portion a day as these drinks are sugary and can damage teeth</li>
+</ul>
+
+<p>Just 1 apple, banana, pear or similar-sized fruit is 1 portion each. </p>
+
+<p>A slice of pineapple or melon is also 1 portion, and 3 heaped tablespoons of vegetables is another portion. </p>
+
+<p>Adding a tablespoon of dried fruit, such as raisins, to your morning cereal is an easy way to get 1 portion. </p>
+
+<p>You could also swap your mid-morning biscuit for a banana, and add a side salad to your lunch.&nbsp;</p>
+
+<p>In the evening, have a portion of vegetables&nbsp;with dinner and fresh fruit&nbsp;with plain, lower fat yoghurt for dessert to reach your 5 A Day.&nbsp;</p>
+
+<p><a href="/live-well/eat-well/5-a-day-what-counts/">Find out more about what counts towards your 5 A Day</a></p>
+
+
+
+
+      
+  
+</section>
+
+          
+            
+
+<section id="starchy-foods-in-your-diet">
+  
+      
+          
+
+
+
+<h2>Starchy&nbsp;foods in your diet</h2>
+
+<p>Starchy foods should make up&nbsp;just over&nbsp;a third of everything you eat. This means your meals should be based on these foods.</p>
+
+<p>Choose wholegrain or wholemeal varieties of starchy foods, such as brown rice, wholewheat pasta, and brown, wholemeal or higher fibre white&nbsp;bread. </p>
+
+<p>They contain more fibre, and usually more vitamins and minerals, than white varieties.</p>
+
+<p>Potatoes with the skins on&nbsp;are&nbsp;a great source of fibre and vitamins. For example, when having boiled potatoes or a jacket potato, eat the skin too.</p>
+
+<p><a href="/live-well/eat-well/starchy-foods-and-carbohydrates/">Find out more about starchy foods</a></p>
+
+
+
+
+      
+  
+</section>
+
+          
+            
+
+<section id="milk-and-dairy-foods-and-alternatives">
+  
+      
+          
+
+
+
+<h2>Milk&nbsp;and dairy foods (and alternatives)</h2>
+
+<p>Milk and dairy foods, such as cheese and yoghurt, are good sources of protein.&nbsp;They&nbsp;also contain calcium, which helps keep your bones healthy.</p>
+
+<p>Go for lower fat and lower sugar products where possible.</p>
+
+<p>Choose semi-skimmed, 1% fat or skimmed&nbsp;milk, as well as lower fat hard cheeses or cottage cheese, and lower fat, lower sugar yoghurt. </p>
+
+<p>Dairy alternatives, such as soya drinks, are also included in this food group. </p>
+
+<p>When buying alternatives, choose unsweetened, calcium-fortified versions.</p>
+
+<p><a href="/live-well/eat-well/milk-and-dairy-nutrition/">Find out more about milk and dairy foods</a></p>
+
+
+
+
+      
+  
+</section>
+
+          
+            
+
+<section id="beans-pulses-fish-eggs-meat-and-other-proteins">
+  
+      
+          
+
+
+
+<h2>Beans, pulses, fish, eggs, meat and other proteins</h2>
+
+<p>These foods are all good sources of protein, which is essential for the body to grow and repair itself. </p>
+
+<p>They're also good sources of a range of vitamins and minerals.</p>
+
+<p>Meat is a good source of protein, vitamins and minerals, including iron, zinc and B&nbsp;vitamins. It's also one of the main sources of vitamin B12. </p>
+
+<p>Choose lean cuts of meat and skinless poultry whenever possible to cut down on fat. Always cook meat thoroughly. </p>
+
+<p>Try to eat less red and processed meat like bacon, ham and sausages.</p>
+
+<p><a href="/live-well/eat-well/meat-nutrition/">Find out more about meat</a></p>
+
+<p>Eggs and fish are also good sources of protein, and contain many vitamins and minerals. Oily fish is particularly rich in omega-3 fatty acids.</p>
+
+<p>Aim to eat at least <a href="/live-well/eat-well/fish-and-shellfish-nutrition/">2 portions of fish a week</a>, including 1 portion of oily fish. </p>
+
+<p>You can choose from fresh, frozen or canned, but remember that canned&nbsp;and smoked fish can often&nbsp;be high in salt.</p>
+
+<p>Pulses, including beans, peas and lentils, are naturally very low in fat and high in fibre, protein, vitamins and minerals. </p>
+
+<p>Nuts are high in fibre, and unsalted nuts make a&nbsp;good snack. But they do still contain high levels of fat, so eat them in moderation.</p>
+
+<p>Read more about&nbsp;<a href="/live-well/eat-well/eggs-nutrition/">eggs</a> and <a href="/live-well/eat-well/beans-and-pulses-nutrition/">pulses and beans</a>.</p>
+
+
+
+
+      
+  
+</section>
+
+          
+            
+
+<section id="oils-and-spreads">
+  
+      
+          
+
+
+
+<h2>Oils&nbsp;and spreads</h2>
+
+<p>Some fat in the diet is essential, but on average people in the UK eat too much saturated fat. </p>
+
+<p>It's important to get most of your fat from unsaturated oils and spreads. </p>
+
+<p>Swapping to unsaturated fats can help <a href="/live-well/healthy-body/lower-your-cholesterol/">lower cholesterol</a>.</p>
+
+<p>Remember that all types of fat are high in energy and should be eaten in small amounts.</p>
+
+<p><a href="/live-well/eat-well/different-fats-nutrition/">Find out more about the different types of fats</a></p>
+
+
+
+
+      
+  
+</section>
+
+          
+            
+
+<section id="eat-less-saturated-fat-sugar-and-salt">
+  
+      
+          
+
+
+
+<h2>Eat less saturated fat, sugar and salt</h2>
+
+<p>Too much saturated fat can increase the amount of cholesterol in the blood, which increases your risk of developing <a href="/conditions/coronary-heart-disease/">heart disease</a>.</p>
+
+<p>Regularly consuming foods and drinks high in sugar increases your risk of <a href="/conditions/obesity/">obesity</a> and <a href="/conditions/tooth-decay/">tooth decay</a>.</p>
+
+<p>Eating too much salt can raise your blood pressure, which increases your risk of getting heart disease or having a stroke.</p>
+
+<p>See <a href="/live-well/eat-well/eight-tips-for-healthy-eating/">8 tips for healthy eating</a> to find out more about why you need to cut down on saturated fat, sugar&nbsp;and salt, which foods they're found in,&nbsp;and how to make healthier choices.</p>
+
+<p><a href="/live-well/eat-well/eat-less-saturated-fat/">Find out more about how to eat less saturated fat</a></p>
+
+
+
+
+      
+  
+</section>
+
+          
+            
+
+<section id="need-to-lose-weight">
+  
+      
+          
+
+
+
+<h2>Need to lose weight?</h2>
+
+<p>Most adults in England are overweight or obese. Check whether you're a healthy weight using the <a href="/live-well/healthy-weight/">BMI calculator</a>.</p>
+
+<p>If you need to lose weight, you can use the <a href="/live-well/healthy-weight/start-the-nhs-weight-loss-plan/">NHS weight loss plan</a>. It's a free 12-week diet and exercise plan to help you lose weight and develop healthier habits.</p>
+
+<p>The plan, which has been downloaded more than 2 million times, is designed to help you lose weight safely, and keep it off.</p>
+
+
+
+
+      
+  
+</section>
+
+        
+
+{{ reviewDate({
+  "lastReview": "12 February 2017",
+  "nextReview": "1 February 2020"
+}) }}
+
+
+{% endblock %}
+
+{% block content_one_third %}
+
+{% endblock %}

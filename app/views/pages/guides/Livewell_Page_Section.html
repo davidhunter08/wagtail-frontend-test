@@ -1,1 +1,824 @@
-https://www.nhs.uk/live-well/eat-well/the-eatwell-guide/
+{% extends 'layouts/layout-guide.html' %}
+
+{% block pageTitle %}
+  Livewell_Page_Section
+{% endblock %}
+
+{% block content_page_heading %}
+
+    <h1>
+      <span role="text">20 tips to eat well for less <span class="nhsuk-caption-xl nhsuk-caption--bottom"><span class="nhsuk-u-visually-hidden"> -</span> Eat well</span></span>
+    </h1>
+
+    <div id="page-nav" class="tab-navigation guides-nav" role="navigation" aria-label="Main menu">
+
+      <h2 class="nhsuk-u-visually-hidden" aria-hidden="true">Main navigation</h2>
+
+      <ul>
+
+        <li class="guides-nav__item">
+
+          <a href="?tabname=getting-pregnant" data-tabname="getting-pregnant" class="guides-nav__label">
+            Food and diet
+          </a>
+
+          <div class="guides-nav__contents">
+
+            <div class="guides-nav__sub-nav">
+
+              {{ details({
+                "classes": "nhsuk-u-margin-bottom-2",
+                "text": "Nutrition and food groups",
+                "HTML": "
+                <ul class='nhsuk-list'>
+                  <li><a href='#'>Link one</a></li>
+                  <li><a href='#'>Link two</a></li>
+                  <li><a href='#'>Link three</a></li>
+                </ul>
+                "
+              }) }}
+
+              {{ details({
+                "classes": "nhsuk-u-margin-bottom-2",
+                "text": "5 A Day",
+                "HTML": "
+                <ul class='nhsuk-list'>
+                  <li><a href='#'>Link one</a></li>
+                  <li><a href='#'>Link two</a></li>
+                  <li><a href='#'>Link three</a></li>
+                  <li><a href='#'>Link four</a></li>
+                  <li><a href='#'>Link five</a></li>
+                  <li><a href='#'>Link six</a></li>
+                </ul>
+                "
+              }) }}
+
+              {{ details({
+                "classes": "nhsuk-u-margin-bottom-2",
+                "text": "Food facts",
+                "HTML": "
+                <ul class='nhsuk-list'>
+                  <li><a href='#'>Link one</a></li>
+                  <li><a href='#'>Link two</a></li>
+                  <li><a href='#'>Link three</a></li>
+                  <li><a href='#'>Link four</a></li>
+                  <li><a href='#'>Link five</a></li>
+                  <li><a href='#'>Link six</a></li>
+                  <li><a href='#'>Link seven</a></li>
+                  <li><a href='#'>Link eight</a></li>
+                  <li><a href='#'>Link nine</a></li>
+                  <li><a href='#'>Link ten</a></li>
+                </ul>
+                "
+              }) }}
+
+              {{ details({
+                "classes": "nhsuk-u-margin-bottom-2",
+                "text": "Eating on a budget",
+                "HTML": "
+                <ul class='nhsuk-list'>
+                  <li><a href='#'>Link one</a></li>
+                  <li><a href='#'>Link two</a></li>
+                  <li><a href='#'>Link three</a></li>
+                  <li><a href='#'>Link four</a></li>
+                  <li><a href='#'>Link five</a></li>
+                  <li><a href='#'>Link six</a></li>
+                  <li><a href='#'>Link seven</a></li>
+                  <li><a href='#'>Link eight</a></li>
+                  <li><a href='#'>Link nine</a></li>
+                  <li><a href='#'>Link ten</a></li>
+                </ul>
+                "
+              }) }}
+
+              {{ details({
+                "classes": "nhsuk-u-margin-bottom-2",
+                "text": "Food safety",
+                "HTML": "
+                <ul class='nhsuk-list'>
+                  <li><a href='#'>Link one</a></li>
+                  <li><a href='#'>Link two</a></li>
+                  <li><a href='#'>Link three</a></li>
+                  <li><a href='#'>Link four</a></li>
+                  <li><a href='#'>Link five</a></li>
+                  <li><a href='#'>Link six</a></li>
+                  <li><a href='#'>Link seven</a></li>
+                  <li><a href='#'>Link eight</a></li>
+                  <li><a href='#'>Link nine</a></li>
+                  <li><a href='#'>Link ten</a></li>
+                </ul>
+                "
+              }) }}
+
+              {{ details({
+                "classes": "nhsuk-u-margin-bottom-2",
+                "text": "Vegetarians and vegans",
+                "HTML": "
+                <ul class='nhsuk-list'>
+                  <li><a href='#'>Link one</a></li>
+                  <li><a href='#'>Link two</a></li>
+                  <li><a href='#'>Link three</a></li>
+                  <li><a href='#'>Link four</a></li>
+                  <li><a href='#'>Link five</a></li>
+                  <li><a href='#'>Link six</a></li>
+                  <li><a href='#'>Link seven</a></li>
+                  <li><a href='#'>Link eight</a></li>
+                  <li><a href='#'>Link nine</a></li>
+                  <li><a href='#'>Link ten</a></li>
+                </ul>
+                "
+              }) }}
+
+            </div>
+
+            <div class="guides-nav__feature-box">
+              
+              <ul class="nhsuk-list">
+
+                <li>
+                  <a href="https://www.nhs.uk/conditions/pregnancy-and-baby/due-date-calculator/">
+                    Calorie checker
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+            
+            <div class="clearfix"></div>
+
+          </div>
+
+        </li>
+
+        <li class="guides-nav__item">
+
+            <a href="?tabname=im-pregnant" data-tabname="im-pregnant" class="guides-nav__label">
+              Recipes and tips
+            </a>
+
+            <div class="guides-nav__contents">
+
+              <div class="guides-nav__sub-nav">
+
+                {{ details({
+                  "classes": "nhsuk-u-margin-bottom-2",
+                  "text": "Healthy recipes",
+                  "HTML": "
+                  <ul class='nhsuk-list'>
+                    <li><a href='#'>Link one</a></li>
+                    <li><a href='#'>Link two</a></li>
+                    <li><a href='#'>Link three</a></li>
+                    <li><a href='#'>Link four</a></li>
+                    <li><a href='#'>Link five</a></li>
+                    <li><a href='#'>Link six</a></li>
+                    <li><a href='#'>Link seven</a></li>
+                    <li><a href='#'>Link eight</a></li>
+                    <li><a href='#'>Link nine</a></li>
+                    <li><a href='#'>Link ten</a></li>
+                  </ul>
+                  "
+                }) }}
+
+                {{ details({
+                  "classes": "nhsuk-u-margin-bottom-2",
+                  "text": "Food tips",
+                  "HTML": "
+                  <ul class='nhsuk-list'>
+                    <li><a href='#'>Link one</a></li>
+                    <li><a href='#'>Link two</a></li>
+                    <li><a href='#'>Link three</a></li>
+                    <li><a href='#'>Link four</a></li>
+                    <li><a href='#'>Link five</a></li>
+                    <li><a href='#'>Link six</a></li>
+                    <li><a href='#'>Link seven</a></li>
+                    <li><a href='#'>Link eight</a></li>
+                    <li><a href='#'>Link nine</a></li>
+                    <li><a href='#'>Link ten</a></li>
+                  </ul>
+                  "
+                }) }}
+
+              </div>
+
+              <div class="guides-nav__feature-box">
+                
+                <ul class="nhsuk-list">
+
+                  <li>
+                    <a href="https://www.nhs.uk/conditions/pregnancy-and-baby/due-date-calculator/">
+                      One You Easy Meals app
+                    </a>
+                  </li>
+                </ul>
+
+              </div>
+
+              <div class="clearfix"></div>
+
+            </div>
+
+          </li>
+
+          <li class="guides-nav__item">
+
+            <a href="?tabname=labour-and-birth" data-tabname="labour-and-birth" class="guides-nav__label">
+              Digestive health
+            </a>
+
+            <div class="guides-nav__contents">
+
+              <div class="guides-nav__sub-nav">
+
+                <ul class="nhsuk-list nhsuk-u-margin-bottom-2">
+
+                  <li> 
+                    <a href="/live-well/eat-well/common-digestive-problems-and-how-to-treat-them/">
+                      Common digestive problems and what to do
+                    </a>  
+                  </li>
+                  <li> 
+                    <a href="/live-well/eat-well/good-foods-to-help-your-digestion/">
+                    Good foods to help your digestion
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/live-well/eat-well/five-lifestyle-tips-for-a-healthy-tummy/">
+                      Tips for a healthy tummy
+                    </a> 
+                  </li>
+                  <li>
+                    <a href="/live-well/eat-well/remedies-for-bloating-and-wind/">
+                      Beat the bloat
+                    </a>
+                  </li>
+                  <li>      
+                    <a href="/live-well/eat-well/should-you-cut-out-bread-to-stop-bloating/">
+                      Should you cut out bread to stop bloating?
+                    </a>
+                  </li>
+                </ul>
+
+            </div>
+              
+            <div class="clearfix"></div>
+          </div>
+        </li>
+
+        </ul>
+
+      <div class="guides-nav__spacer" style="height: 0px;"></div>
+
+    </div>
+
+{% endblock %}
+
+{% block content_two_thirds %}
+
+<section id="">
+
+  <img class="wag-guide-image" alt="" src="https://assets.nhs.uk/prod/images/T_1117_eat-for-cheap_671951766.2e16d0ba.fill-920x613.jpg" />
+
+<p><strong>Can you eat healthily and save money? You bet your bottom dollar you can! Here are 20 tips to help you have your (low-fat) cake and eat it.</strong></p>
+
+<p>If cost is discouraging you from trying to make changes to your and your family's diet, read on: healthy eating does not have to cost more.</p>
+
+
+
+
+      
+  
+</section>
+
+          
+            
+
+<section id="write-a-shopping-list">
+  
+      
+          
+
+
+
+<h2>Write a shopping list</h2>
+
+<p>Draw up a weekly meal plan using up ingredients you already have and make a shopping list of any missing items.</p>
+
+<p>Try not to shop when hungry. People who shop when hungry are more likely to spend more, especially on less healthy foods, such as high-fat and sugary snacks.</p>
+
+
+
+
+      
+  
+</section>
+
+          
+            
+
+<section id="waste-nothing">
+  
+      
+          
+
+
+
+<h2>Waste nothing</h2>
+
+<p>The average family with children throws away almost £60 of good food every month. Be strict about buying only what you'll actually eat.</p>
+
+<p>Plan your meals so all the ingredients on your list get used. Freeze any unused food. Food storage bags and&nbsp;boxes will come in handy.</p>
+
+
+
+
+      
+  
+</section>
+
+          
+            
+
+<section id="eat-leftovers-for-lunch">
+  
+      
+          
+
+
+
+<h2>Eat leftovers for lunch</h2>
+
+<p>Cook extra portions for your evening meal so you can have the leftovers for lunch the next day.</p>
+
+<p>Any leftovers can be frozen for another day. Eventually, you'll have a freezer full of homemade ready meals on tap. </p>
+
+<p><a href="/live-well/eat-well/how-to-store-food-and-leftovers/">Find out how to use leftovers safely</a></p>
+
+
+
+
+      
+  
+</section>
+
+          
+            
+
+<section id="buy-frozen">
+  
+      
+          
+
+
+
+<h2>Buy frozen</h2>
+
+<p>Frozen fruit and vegetables are underrated. They come pre-chopped and ready to use, are just as good for you (try to avoid those with added salt, sugar or fat), and are often cheaper than fresh varieties.</p>
+
+<p>Frozen vegetables are picked at the peak of freshness and then frozen to seal in their nutrients. </p>
+
+<p><a href="/live-well/eat-well/how-to-store-food-and-leftovers/">Get tips on freezing and defrosting</a></p>
+
+
+
+
+      
+  
+</section>
+
+          
+            
+
+<section id="try-cheaper-brands">
+  
+      
+          
+
+
+
+<h2>Try cheaper brands</h2>
+
+<p>You could save money by buying cheaper brands than you normally do. </p>
+
+<p>There's not always much difference between value and premium ranges. Give it a go and let your taste buds be the judge, not the shiny label. </p>
+
+<p><a href="/live-well/eat-well/how-to-read-food-labels/">Find out how food labels can help you make healthier choices</a></p>
+
+
+
+
+      
+  
+</section>
+
+          
+            
+
+<section id="eat-more-veg">
+  
+      
+          
+
+
+
+<h2>Eat more veg</h2>
+
+<p>Meat and fish are typically the most expensive food ingredients on a shopping list. </p>
+
+<p>How about adding vegetables to meat dishes like casseroles to make your meals go further? Or try a few vegetarian meals during the week to keep costs down.</p>
+
+<p>Make it fun by joining the thousands of people who regularly take part in <a href="http://www.meatfreemondays.co.uk/" title="External website">meat-free Monday</a>.</p>
+
+
+
+
+      
+  
+</section>
+
+          
+            
+
+<section id="cook-with-pulses">
+  
+      
+          
+
+
+
+<h2>Cook with pulses</h2>
+
+<p>Pulses, such as beans, lentils and peas, are some of the cheapest foods on the supermarket shelf.</p>
+
+<p>These pulses are low in calories and fat but packed with fibre, vitamins and minerals, and also count towards your <a href="/live-well/eat-well/5-a-day-what-counts/">5 A Day</a>.</p>
+
+<p>Use them in dishes to replace some of the chicken or meat, such as a chilli con carne with kidney beans or a chicken curry with chickpeas.</p>
+
+
+
+
+      
+  
+</section>
+
+          
+            
+
+<section id="freeze-leftover-bread">
+  
+      
+          
+
+
+
+<h2>Freeze leftover bread</h2>
+
+<p>Bread is one of the most wasted household foods. Reduce waste by freezing bread, preferably in portions (for convenience) and when it's at its freshest (for taste).</p>
+
+<p>Store bread in an airtight container (such as a freezer bag)&nbsp;to avoid freezer burn.</p>
+
+
+
+
+      
+  
+</section>
+
+          
+            
+
+<section id="know-your-kitchen">
+  
+      
+          
+
+
+
+<h2>Know your kitchen</h2>
+
+<p>Know what's in your kitchen store cupboard, fridge and freezer. You may find you have got enough ingredients to make a meal.</p>
+
+<p>Plan your week's meals to include ingredients you have already got in and avoid buying items you already have. </p>
+
+<p>Check <a href="/live-well/eat-well/how-to-store-food-and-leftovers/">use-by dates</a> to make sure you use up ingredients before they go off.</p>
+
+
+
+
+      
+  
+</section>
+
+          
+            
+
+<section id="buy-cheaper-cuts">
+  
+      
+          
+
+
+
+<h2>Buy cheaper cuts</h2>
+
+<p>If you're prepared to take a little more time with your cooking, buying cheaper cuts of meat is a great way to save money. </p>
+
+<p>Choosing a cheaper cut of meat, such as braising steak, shin or shoulder, does not mean missing out on a tasty meal.</p>
+
+<p>Slow cooking gradually breaks down the fibres in cheaper cuts, giving great taste at a lower cost.</p>
+
+
+
+
+      
+  
+</section>
+
+          
+            
+
+<section id="look-up-cheap-recipes">
+  
+      
+          
+
+
+
+<h2>Look up cheap recipes</h2>
+
+<p>Cheap does not have to mean less tasty. There are plenty of websites offering recipes for cheap eats and leftover ingredients. </p>
+
+<p>Check out <a href="https://mealmixer.change4life.co.uk">Change4Life's meal mixer</a> and our <a href="/live-well/eat-well/hearty-vegetable-soup-healthy-recipe/">healthy recipes</a> section for some inspiration.</p>
+
+
+
+
+      
+  
+</section>
+
+          
+            
+
+<section id="eat-smaller-portions">
+  
+      
+          
+
+
+
+<h2>Eat smaller portions</h2>
+
+<p>Try eating smaller portions by saying no to a second helping or using smaller plates. </p>
+
+<p>You'll have more left over for lunch the next day and your waistline may benefit, too.</p>
+
+<p>Try weighing or measuring out staples such as pasta and rice when cooking to stay in control of portion size and reduce waste.</p>
+
+
+
+
+      
+  
+</section>
+
+          
+            
+
+<section id="cook-from-scratch">
+  
+      
+          
+
+
+
+<h2>Cook from scratch</h2>
+
+<p>Save money by cutting back on takeaways. Preparing and cooking your own meals is generally cheaper than buying a takeaway or a ready meal, and because it's easier to control what goes into your dish, it can be healthier.</p>
+
+
+
+
+      
+  
+</section>
+
+          
+            
+
+<section id="buy-chicken-whole">
+  
+      
+          
+
+
+
+<h2>Buy chicken whole</h2>
+
+<p>The cheapest way to buy chicken is to buy a whole chicken. From a whole chicken, you'll get 2 breasts, 2 thighs, drumsticks and wings, plus a carcass&nbsp;for making stock.</p>
+
+<p>Consider using the deli counter for cheese and cured meats. You can get exact amounts, which is cheaper and less wasteful.</p>
+
+
+
+
+      
+  
+</section>
+
+          
+            
+
+<section id="compare-pre-packed-with-loose">
+  
+      
+          
+
+
+
+<h2>Compare pre-packed&nbsp;with loose</h2>
+
+<p>Fruit and vegetables sometimes cost more pre-packed than loose.</p>
+
+<p>Check the price per weight (for example, £/kg). Stores know that consumers want to buy in bulk, so they mix it up: sometimes the packed produce is cheaper, sometimes it's more expensive. </p>
+
+<p>Also, pre-packed is not always the freshest and you may end up with more than you need.</p>
+
+
+
+
+      
+  
+</section>
+
+          
+            
+
+<section id="cut-down-on-luxuries">
+  
+      
+          
+
+
+
+<h2>Cut down on luxuries</h2>
+
+<p>If your regular shopping basket tends to include fizzy drinks, crisps, snack bars, biscuits and cakes, try trimming down on these non-essential items. </p>
+
+<p>Many of these are high in sugar and fat, so you'll be doing your waistline and your bottom line a favour. They can also contain a lot of salt. </p>
+
+<p>Think about cheaper and healthier alternatives, such as sparkling water and fruit juice instead of cola, or fruit and plain yoghurt.</p>
+
+
+
+
+      
+  
+</section>
+
+          
+            
+
+<section id="beware-of-bogof-offers">
+  
+      
+          
+
+
+
+<h2>Beware of BOGOF offers</h2>
+
+<p>Special discounts, such as buy-one-get-one-free (BOGOF) deals, can offer good value, but be careful.</p>
+
+<p>Only buy items you actually need and are likely to keep and use. Tinned or frozen fruit and veg, or rice and pasta, are good examples. </p>
+
+<p>Markdowns on perishables at the end of the shopping day are another way to bag a saving.</p>
+
+<p>But make sure the item gets used before the <a href="/live-well/eat-well/how-to-store-food-and-leftovers/">use-by date</a> and does not go off sooner than expected.</p>
+
+
+
+
+      
+  
+</section>
+
+          
+            
+
+<section id="toddlers-eat-the-same">
+  
+      
+          
+
+
+
+<h2>Toddlers eat the same</h2>
+
+<p>If you have a toddler in tow, get them used to eating the same meals as you instead of relying on costly pre-prepared toddler food. </p>
+
+<p>Simply blend or chop up their portion to suit their age and freeze extra child-sized portions for later. </p>
+
+<p>Make sure not to add any salt to their portions, and be careful with spicy food.</p>
+
+
+
+
+      
+  
+</section>
+
+          
+            
+
+<section id="shop-online">
+  
+      
+          
+
+
+
+<h2>Shop online</h2>
+
+<p>Search for supermarket price comparisons that let you select a basket of products and then choose the cheapest supplier. The price differences can be significant. </p>
+
+<p>Unlike going to the shops yourself, you'll know how much you have spent before going to the till, which can make it easier to stay within budget.</p>
+
+
+
+
+      
+  
+</section>
+
+          
+            
+
+<section id="shop-during-the-happy-hour">
+  
+      
+          
+
+
+
+<h2>Shop during the 'happy hour'</h2>
+
+<p>Most supermarkets discount fresh items towards the end of the day. </p>
+
+<p>But with longer opening hours, it's a case of finding out just the right time to grab those bargains. </p>
+
+<p>If you time it right, the "reduced to clear shelves" can save you big money. Always check use-by dates.</p>
+
+
+
+
+      
+  
+</section>
+
+          
+            
+
+<section id="video-eating-well-on-a-budget">
+  
+      
+          
+
+<link href="/static/css/core-videos.cf16adba2d44.css" rel="stylesheet" type="text/css">
+
+
+    <div class="wag-video">
+        <div style="position: relative; display: block; max-width: 100%;">
+            <div style="padding-top: 56.25%;">
+                <div tabindex="-1" id="vjs_video_3" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;" class="video-js vjs-mouse vjs-paused vjs-controls-enabled vjs-workinghover vjs-v5 bc-player-EkC1XU82e_default vjs-dock vjs-plugins-ready vjs-contextmenu vjs-contextmenu-ui vjs-player-info vjs-errors vjs-user-inactive" data-application-id="" data-embed="default" data-player="EkC1XU82e" data-account="79855382001" data-video-id="681768486001" role="region" aria-label="video player"><video data-video-id="681768486001" data-account="79855382001" data-player="EkC1XU82e" data-embed="default" data-application-id="" class="vjs-tech" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;" id="vjs_video_3_html5_api" tabindex="-1" aria-labelledby="vjs-dock-title-1" aria-describedby="vjs-dock-description-2" poster="https://brightcove04pmdo-a.akamaihd.net/79855382001/79855382001_714634522001_ari-origin05-arc-170-1292615765666.jpg?pubId=79855382001&amp;videoId=681768486001" src="blob:https://www.nhs.uk/a6f35f7f-41de-450b-961c-2852a1c3d926">
+                </video><div></div><div class="vjs-poster" tabindex="-1" aria-disabled="false" style="background-image: url(&quot;https://brightcove04pmdo-a.akamaihd.net/79855382001/79855382001_714634522001_ari-origin05-arc-170-1292615765666.jpg?pubId=79855382001&amp;videoId=681768486001&quot;);"></div><div class="vjs-text-track-display" aria-live="off" aria-atomic="true"><div style="position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; margin: 1.5%;"></div></div><div class="vjs-dock-text"><div class="vjs-dock-title" title="" id="vjs-dock-title-1">Eating well on a budget</div><div class="vjs-dock-description" title="" id="vjs-dock-description-2">In this video, a dietitian gives advice on how to eat healthily on a budget.</div></div><div class="vjs-dock-shelf"></div><div class="vjs-loading-spinner" dir="ltr"></div><button class="vjs-big-play-button" type="button" aria-live="polite" title="Play Video" aria-disabled="false"><span class="vjs-control-text">Play Video</span></button><div class="vjs-control-bar" dir="ltr" role="group"><button class="vjs-play-control vjs-control vjs-button" type="button" aria-live="polite" title="Play" aria-disabled="false"><span class="vjs-control-text">Play</span></button><div class="vjs-volume-menu-button vjs-menu-button vjs-menu-button-inline vjs-control vjs-button vjs-volume-menu-button-horizontal vjs-vol-3" tabindex="0" role="button" aria-live="polite" title="Mute" aria-disabled="false"><div class="vjs-menu"><div class="vjs-menu-content"><div tabindex="0" class="vjs-volume-bar vjs-slider-bar vjs-slider vjs-slider-horizontal" role="slider" aria-valuenow="100.00" aria-valuemin="0" aria-valuemax="100" aria-label="volume level" aria-valuetext="100.00%"><div class="vjs-volume-level"><span class="vjs-control-text"></span></div></div></div></div><span class="vjs-control-text">Mute</span></div><div class="vjs-current-time vjs-time-control vjs-control vjs-time-controls"><div class="vjs-current-time-display" aria-live="off"><span class="vjs-control-text">Current Time </span>0:00</div></div><div class="vjs-time-control vjs-time-divider vjs-time-controls"><div><span>/</span></div></div><div class="vjs-duration vjs-time-control vjs-control vjs-time-controls"><div class="vjs-duration-display" aria-live="off"><span class="vjs-control-text">Duration Time</span> 1:45</div></div><div class="vjs-progress-control vjs-control"><div tabindex="0" class="vjs-progress-holder vjs-slider vjs-slider-horizontal" role="slider" aria-valuenow="NaN" aria-valuemin="0" aria-valuemax="100" aria-label="progress bar" aria-valuetext="0:00"><div class="vjs-load-progress" style="width: 11.3225%;"><span class="vjs-control-text"><span>Loaded</span>: 0%</span><div style="left: 0%; width: 100%;"></div></div><div class="vjs-mouse-display vjs-keep-tooltips-inside" data-current-time="0:00" style="left: 0px;"><div class="vjs-time-tooltip">0:00</div></div><div class="vjs-play-progress vjs-slider-bar vjs-keep-tooltips-inside" data-current-time="0:00"><span class="vjs-control-text"><span>Progress</span>: 0%</span></div><div class="vjs-tooltip-progress-bar vjs-slider-bar" data-current-time="0:00" aria-valuenow="NaN" aria-valuetext="0:00"><div class="vjs-time-tooltip">0:00</div>
+        <span class="vjs-control-text"><span>Progress</span>: 0%</span></div></div></div><div class="vjs-live-control vjs-control vjs-live-controls vjs-hidden"><div class="vjs-live-display" aria-live="off"><span class="vjs-control-text">Stream Type</span>LIVE</div></div><div class="vjs-remaining-time vjs-time-control vjs-control vjs-time-controls"><div class="vjs-remaining-time-display" aria-live="off"><span class="vjs-control-text">Remaining Time</span> -1:45</div></div><div class="vjs-custom-control-spacer vjs-spacer ">&nbsp;</div><div class="vjs-playback-rate vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden" tabindex="0" role="menuitem" aria-live="polite" title="Playback Rate" aria-disabled="false" aria-expanded="false" aria-haspopup="true"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"></ul></div><span class="vjs-control-text">Playback Rate</span><div class="vjs-playback-rate-value">1</div></div><div class="vjs-chapters-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden" tabindex="0" role="menuitem" aria-live="polite" title="Chapters" aria-disabled="false" aria-expanded="false" aria-haspopup="true" aria-label="Chapters Menu"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-title" tabindex="-1">Chapters</li></ul></div><span class="vjs-control-text">Chapters</span></div><div class="vjs-descriptions-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden" tabindex="0" role="menuitem" aria-live="polite" title="Descriptions" aria-disabled="false" aria-expanded="false" aria-haspopup="true" aria-label="Descriptions Menu"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemcheckbox" aria-live="polite" aria-disabled="false" aria-checked="true">descriptions off<span class="vjs-control-text">, selected</span></li></ul></div><span class="vjs-control-text">Descriptions</span></div><div class="vjs-subtitles-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden" tabindex="0" role="menuitem" aria-live="polite" title="Subtitles" aria-disabled="false" aria-expanded="false" aria-haspopup="true" aria-label="Subtitles Menu"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemcheckbox" aria-live="polite" aria-disabled="false" aria-checked="true">subtitles off<span class="vjs-control-text">, selected</span></li></ul></div><span class="vjs-control-text">Subtitles</span></div><div class="vjs-captions-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button" tabindex="0" role="menuitem" aria-live="polite" title="Captions" aria-disabled="false" aria-expanded="false" aria-haspopup="true" aria-label="Captions Menu"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item vjs-texttrack-settings" tabindex="-1" role="menuitem" aria-live="polite" aria-disabled="false">captions settings<span class="vjs-control-text">, opens captions settings dialog</span></li><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemcheckbox" aria-live="polite" aria-disabled="false" aria-checked="true">captions off<span class="vjs-control-text">, selected</span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemcheckbox" aria-live="polite" aria-disabled="false" aria-checked="false">English<span class="vjs-control-text"> </span></li></ul></div><span class="vjs-control-text">Captions</span></div><div class="vjs-audio-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden" tabindex="0" role="menuitem" aria-live="polite" title="Audio Track" aria-disabled="false" aria-expanded="false" aria-haspopup="true" aria-label="Audio Menu"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemcheckbox" aria-live="polite" aria-disabled="false" aria-checked="true">default<span class="vjs-control-text">, selected</span></li></ul></div><span class="vjs-control-text">Audio Track</span></div><button class="vjs-fullscreen-control vjs-control vjs-button" type="button" aria-live="polite" title="Fullscreen" aria-disabled="false"><span class="vjs-control-text">Fullscreen</span></button></div><div class="vjs-error-display vjs-modal-dialog vjs-hidden " tabindex="-1" aria-describedby="vjs_video_3_component_428_description" aria-hidden="true" aria-label="Modal Window" role="dialog"><p class="vjs-modal-dialog-description vjs-offscreen" id="vjs_video_3_component_428_description">This is a modal window.</p><div class="vjs-modal-dialog-content" role="document"></div></div><div class="vjs-caption-settings vjs-modal-overlay vjs-hidden" tabindex="-1" role="dialog" aria-labelledby="TTsettingsDialogLabel-vjs_video_3_component_433" aria-describedby="TTsettingsDialogDescription-vjs_video_3_component_433"><div role="document"><div class="vjs-control-text" id="TTsettingsDialogLabel-vjs_video_3_component_433" aria-level="1" role="heading">Caption Settings Dialog</div><div class="vjs-control-text" id="TTsettingsDialogDescription-vjs_video_3_component_433">Beginning of dialog window. Escape will cancel and close the window.</div><div class="vjs-tracksettings"><div class="vjs-tracksettings-colors"><fieldset class="vjs-fg-color vjs-tracksetting"><legend>Text</legend><label class="vjs-label" for="captions-foreground-color-vjs_video_3_component_433">Color</label><select id="captions-foreground-color-vjs_video_3_component_433"><option value="#FFF">White</option><option value="#000">Black</option><option value="#F00">Red</option><option value="#0F0">Green</option><option value="#00F">Blue</option><option value="#FF0">Yellow</option><option value="#F0F">Magenta</option><option value="#0FF">Cyan</option></select><span class="vjs-text-opacity vjs-opacity"><label class="vjs-label" for="captions-foreground-opacity-vjs_video_3_component_433">Transparency</label><select id="captions-foreground-opacity-vjs_video_3_component_433"><option value="1">Opaque</option><option value="0.5">Semi-Transparent</option></select></span></fieldset><fieldset class="vjs-bg-color vjs-tracksetting"><legend>Background</legend><label class="vjs-label" for="captions-background-color-vjs_video_3_component_433">Color</label><select id="captions-background-color-vjs_video_3_component_433"><option value="#000">Black</option><option value="#FFF">White</option><option value="#F00">Red</option><option value="#0F0">Green</option><option value="#00F">Blue</option><option value="#FF0">Yellow</option><option value="#F0F">Magenta</option><option value="#0FF">Cyan</option></select><span class="vjs-bg-opacity vjs-opacity"><label class="vjs-label" for="captions-background-opacity-vjs_video_3_component_433">Transparency</label><select id="captions-background-opacity-vjs_video_3_component_433"><option value="1">Opaque</option><option value="0.5">Semi-Transparent</option><option value="0">Transparent</option></select></span></fieldset><fieldset class="vjs-window-color vjs-tracksetting"><legend>Window</legend><label class="vjs-label" for="captions-window-color-vjs_video_3_component_433">Color</label><select id="captions-window-color-vjs_video_3_component_433"><option value="#000">Black</option><option value="#FFF">White</option><option value="#F00">Red</option><option value="#0F0">Green</option><option value="#00F">Blue</option><option value="#FF0">Yellow</option><option value="#F0F">Magenta</option><option value="#0FF">Cyan</option></select><span class="vjs-window-opacity vjs-opacity"><label class="vjs-label" for="captions-window-opacity-vjs_video_3_component_433">Transparency</label><select id="captions-window-opacity-vjs_video_3_component_433"><option value="0">Transparent</option><option value="0.5">Semi-Transparent</option><option value="1">Opaque</option></select></span></fieldset></div><div class="vjs-tracksettings-font"><div class="vjs-font-percent vjs-tracksetting"><label class="vjs-label" for="captions-font-size-vjs_video_3_component_433">Font Size</label><select id="captions-font-size-vjs_video_3_component_433"><option value="0.50">50%</option><option value="0.75">75%</option><option value="1.00">100%</option><option value="1.25">125%</option><option value="1.50">150%</option><option value="1.75">175%</option><option value="2.00">200%</option><option value="3.00">300%</option><option value="4.00">400%</option></select></div><div class="vjs-edge-style vjs-tracksetting"><label class="vjs-label" for="vjs_video_3_component_433">Text Edge Style</label><select id="vjs_video_3_component_433"><option value="none">None</option><option value="raised">Raised</option><option value="depressed">Depressed</option><option value="uniform">Uniform</option><option value="dropshadow">Dropshadow</option></select></div><div class="vjs-font-family vjs-tracksetting"><label class="vjs-label" for="captions-font-family-vjs_video_3_component_433">Font Family</label><select id="captions-font-family-vjs_video_3_component_433"><option value="proportionalSansSerif">Proportional Sans-Serif</option><option value="monospaceSansSerif">Monospace Sans-Serif</option><option value="proportionalSerif">Proportional Serif</option><option value="monospaceSerif">Monospace Serif</option><option value="casual">Casual</option><option value="script">Script</option><option value="small-caps">Small Caps</option></select></div></div><div class="vjs-tracksettings-controls"><button class="vjs-default-button">Defaults</button><button class="vjs-done-button">Done</button></div></div></div></div><div class="vjs-player-info-modal vjs-modal-dialog vjs-hidden " tabindex="-1" aria-describedby="vjs_video_3_component_530_description" aria-hidden="true" aria-label="Player Information Dialog" role="dialog"><button class="vjs-close-button vjs-control vjs-button" type="button" aria-live="polite" aria-disabled="false" title="Close Modal Dialog"><span class="vjs-control-text">Close Modal Dialog</span></button><p class="vjs-modal-dialog-description vjs-offscreen" id="vjs_video_3_component_530_description">This is a modal window. This modal can be closed by pressing the Escape key or activating the close button.</p><div class="vjs-modal-dialog-content" role="document"></div></div><script src="//vjs.zencdn.net/vttjs/0.12.5/vtt.global.min.js"></script></div>
+                <script src="//players.brightcove.net/79855382001/EkC1XU82e_default/index.min.js"></script>
+            </div>
+        </div>
+
+        <div class="wag-video--date">
+          Media last reviewed: 11 September 2018<br>
+          Media review due: 11 September 2021 
+        </div>
+        
+    </div>
+
+
+      
+  
+</section>
+
+        
+
+{{ reviewDate({
+  "lastReview": "12 February 2017",
+  "nextReview": "1 February 2020"
+}) }}
+
+
+{% endblock %}
+
+{% block content_one_third %}
+
+{% endblock %}
