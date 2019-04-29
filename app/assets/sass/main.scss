@@ -20,6 +20,21 @@
   }
 }
 
+// Medicines contents list
+.medicines-page-contents {
+  @include nhsuk-responsive-margin(7, 'bottom');
+
+  ol {
+    margin-bottom: 0;
+  }
+}
+
+.medicines-page-contents__title {
+  @include nhsuk-responsive-margin(3, 'bottom');
+
+  font-weight: $nhsuk-font-bold;
+}
+
 // Wagtail specific h2 section spacing
 // Because the p + h2 styling gets ignored because of the section
 section + section h2 {
