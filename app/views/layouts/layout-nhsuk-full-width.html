@@ -1,41 +1,41 @@
 {% extends 'layouts/layout-nhsuk.html' %}
 
 {% block content %}
-<article>
 
   <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-two-thirds">
+    <div class="nhsuk-grid-column-full">
 
-      {% block content_page_heading %}
-      
-        <div class="layout-example">
+      <div class="nhsuk-u-reading-width">
 
-          <h1>Full width page layout</h1>
+        {% block content_page_heading %}
+        
+          <div class="layout-example">
 
-          <p class="nhsuk-lede-text">Two thirds column (for page heading and lede text)</p>
-          
-        </div>
-      
-      {% endblock %}
+            <h1>Full width page layout</h1>
+
+            <p class="nhsuk-lede-text">Reading width container (for page heading and lede text)</p>
+            
+          </div>
+        
+        {% endblock %}
+
+      </div>
+
+      <article>
+
+        {% block content_full_width %}
+
+          <div class="layout-example">
+
+            Full width column (for page content)
+
+          </div>
+        
+        {% endblock %}
+
+      </article>
 
     </div>
   </div>
 
-  <aside class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-full">
-
-      {% block content_full_width %}
-
-        <div class="layout-example">
-
-          Full width column (for page content)
-
-        </div>
-      
-      {% endblock %}
-
-    </aside>
-  </div>
-
-</article>
 {% endblock %}
