@@ -19,5 +19,18 @@
 
 .nhsuk-related-nav__list {
   list-style: none;
+  margin-bottom: nhsuk-spacing(3);
   padding-left: nhsuk-spacing(0);
+}
+
+.nhsuk-related-nav__item {
+  @include nhsuk-typography-responsive(16);
+}
+
+.nhsuk-related-nav__sub-heading {
+  @include nhsuk-typography-responsive(19, $override-line-height: 1.2);
+
+  border-top: 1px solid $nhsuk-border-color;
+  margin-bottom: nhsuk-spacing(3);
+  padding-top: nhsuk-spacing(3);
 }
