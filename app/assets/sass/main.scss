@@ -9,6 +9,9 @@
 @import 'components/video';
 @import 'components/guide';
 
+//Homepage specific styles
+@import 'components/homepage';
+
 // Used to highlight the sections of the page
 .layout-example {
   border: 1px dashed $color_nhsuk-grey-3;

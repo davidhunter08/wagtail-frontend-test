@@ -1,0 +1,289 @@
+{% extends 'layouts/layout-nhsuk.html' %}
+
+{% set containerClasses = 'nhsuk-width-container--full' %}
+{% set mainClasses = 'nhsuk-main-wrapper--no-padding nhsuk-homepage' %}
+
+{% block pageTitle %}
+  home_page.html
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+  {{ hero({
+    "heading": "We’re here for you",
+    "text": "Helping you take control of your health and wellbeing.",
+    "imageURL": "https://www.nhs.uk/static/nhsuk_shared/img/homepage/hero-2.jpg"
+  }) }}
+
+  <section class="nhsuk-section">
+    <div class="nhsuk-width-container">
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-one-half nhsuk-section__content">
+          <h2>Health A to Z</h2>
+          <p>Your complete guide to conditions, symptoms and treatments, including what to do and when to get help.</p>
+          {{ actionLink({
+            "text": "Go to Health A to Z",
+            "href": "#"
+          }) }}
+        </div>
+        <div class="nhsuk-grid-column-one-half nhsuk-section__content">
+          <h2>Medicines A to Z</h2>
+          <p>Find out how your medicine works, how and when to take it, possible side effects and answers to your common questions.</p>
+          {{ actionLink({
+            "text": "Go to Medicines A to Z",
+            "href": "#"
+          }) }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="nhsuk-section">
+    <div class="nhsuk-width-container">
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-full nhsuk-section__content">
+          <div class="nhsuk-u-reading-width">
+            <h2>NHS services</h2>
+            <p>Find the service you need and book appointments online.</p>
+          </div>
+          <ul class="nhsuk-list-signage nhsuk-list-links--two-columns ">
+            <li>
+                <a href="https://beta.nhs.uk/find-a-pharmacy/">
+                    <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                        <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/static/nhsuk_base/img/icon-chevron-right-grey.svg" xlink:href="">
+                        </image>
+                    </svg>
+                    <div>Find a pharmacy</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.nhs.uk/Service-Search/Dentist/LocationSearch/3">
+                    <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                        <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/static/nhsuk_base/img/icon-chevron-right-grey.svg" xlink:href="">
+                        </image>
+                    </svg>
+                    <div>Find a dentist</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.nhs.uk/service-search/GP/LocationSearch/4">
+                    <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                        <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/static/nhsuk_base/img/icon-chevron-right-grey.svg" xlink:href="">
+                        </image>
+                    </svg>
+                    <div>Find a GP</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.nhs.uk/Service-Search/Accident-and-emergency-services/LocationSearch/428">
+                    <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                        <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/static/nhsuk_base/img/icon-chevron-right-grey.svg" xlink:href="">
+                        </image>
+                    </svg>
+                    <div>Find your nearest A&amp;E</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.nhs.uk/Service-Search/Urgent-Care/LocationSearch/1824">
+                    <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                        <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/static/nhsuk_base/img/icon-chevron-right-grey.svg" xlink:href="">
+                        </image>
+                    </svg>
+                    <div>Find other urgent care services</div>
+                </a>
+            </li>
+          </ul>
+          {{ actionLink({
+            "text": "Find other NHS services",
+            "href": "#"
+          }) }}
+          {{ panel({
+            "HTML": "<h3>If you need help now, but it’s not an emergency</h3>
+            <p>Go to <a href='https://111.nhs.uk/?utm_source=nhsuk&amp;utm_campaign=homepage'>111.nhs.uk</a> or <a href='tel: 111'>call 111</a>.</p>"
+          }) }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="nhsuk-section">
+    <div class="nhsuk-width-container">
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-full nhsuk-section__content">
+          <div class="nhsuk-u-reading-width">
+            <h2>Book GP appointments and order prescriptions online</h2>
+            <p>All GP practices now offer online services to:</p>
+            <ul>
+              <li>book or cancel appointments</li>
+              <li>order repeat prescriptions</li>
+              <li>see parts of your medical record</li>
+            </ul>
+            <p>Every month, over 1 million appointments are booked online and over 2 million prescriptions are ordered without needing to visit a GP.</p>
+          </div>
+          {{ actionLink({
+            "text": "Find out how to sign up for GP online services",
+            "href": "#"
+          }) }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="nhsuk-section nhsuk-section--with-image">
+    <div class="nhsuk-width-container">
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-one-half nhsuk-section__content">
+          <h2>Focus on...</h2>
+          <ul class="nhsuk-list-signage  nhsuk-list-links--one-column ">
+            <li>
+                <a href="https://www.nhs.uk/conditions/diabetes/">
+                    <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                        <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/static/nhsuk_base/img/icon-chevron-right-grey.svg" xlink:href="">
+                        </image>
+                    </svg>
+                    <div>Diabetes</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.nhs.uk/conditions/cancer/">
+                    <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                        <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/static/nhsuk_base/img/icon-chevron-right-grey.svg" xlink:href="">
+                        </image>
+                    </svg>
+                    <div>Cancer</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.nhs.uk/conditions/social-care-and-support-guide/">
+                    <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                        <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/static/nhsuk_base/img/icon-chevron-right-grey.svg" xlink:href="">
+                        </image>
+                    </svg>
+                    <div>Care and support</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.nhs.uk/conditions/pregnancy-and-baby/">
+                    <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                        <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/static/nhsuk_base/img/icon-chevron-right-grey.svg" xlink:href="">
+                        </image>
+                    </svg>
+                    <div>Pregnancy</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.nhs.uk/conditions/stress-anxiety-depression/">
+                    <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                        <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/static/nhsuk_base/img/icon-chevron-right-grey.svg" xlink:href="">
+                        </image>
+                    </svg>
+                    <div>Mental health</div>
+                </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="nhsuk-section">
+    <div class="nhsuk-width-container">
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-full nhsuk-section__content">
+          <div class="nhsuk-u-reading-width">
+            <h2>European Health Insurance Card (EHIC)</h2>
+            <p>An EHIC can help you get free or reduced-cost healthcare while visiting many countries in Europe.</p>
+          </div>
+          {{ actionLink({
+            "text": "Apply for or renew your EHIC",
+            "href": "#"
+          }) }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="nhsuk-section">
+    <div class="nhsuk-width-container">
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-one-half nhsuk-section__content">
+          <div class="nhsuk-u-reading-width">
+            <h2>Healthy living</h2>
+            <p>Advice, tips and tools to help you make the best choices about your health and wellbeing.</p>
+            <ul class="nhsuk-list">
+              <li><a href="#">Lose weight</a></li>
+              <li><a href="#">Eat well</a></li>
+              <li><a href="#">Help with stress, anxiety and depression</a></li>
+              <li><a href="#">Exercise</a></li>
+            </ul>
+          </div>
+          {{ actionLink({
+            "text": "Go to healthy living",
+            "href": "#"
+          }) }}
+        </div>
+        <div class="nhsuk-grid-column-one-half nhsuk-section__content">
+          {{ promo({
+            "href": "#",
+            "imgURL": "https://assets.nhs.uk/prod/images/PHE_0119_Weaning_02.2e16d0ba.fill-2400x1350.jpg",
+            "heading": "Is your baby ready for weaning?",
+            "description": "Start your baby's weaning journey with Start4Life. We have expert advice, helpful videos, tips from parents, and lots of simple, healthy weaning recipes."
+          }) }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="nhsuk-section">
+    <div class="nhsuk-width-container">
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-full nhsuk-section__content">
+          <div class="nhsuk-u-reading-width">
+            <h2>Latest from the NHS</h2>
+            <p>News, events, information and advice.</p>
+          </div>
+          <div class="nhsuk-grid-row nhsuk-promo-group">
+            <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+              {{ promo({
+                "href": "#",
+                "heading": "Prescription changes",
+                "description": "The NHS is reducing prescriptions for medicines you can buy in a pharmacy. Find out what this means for you."
+              }) }}
+            </div>
+            <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+              {{ promo({
+                "href": "#",
+                "heading": "Healthcare abroad",
+                "description": "Find out about accessing healthcare when visiting, working, studying or living in the EU."
+              }) }}
+            </div>
+            <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+              {{ promo({
+                "href": "#",
+                "heading": "Breast cancer",
+                "description": "Breast cancer affects around 50,000 women a year. Early detection can make treatment more effective."
+              }) }}
+            </div>
+          </div>
+          {{ actionLink({
+            "text": "View all health stories",
+            "href": "#"
+          }) }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}

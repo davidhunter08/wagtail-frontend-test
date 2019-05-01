@@ -1,0 +1,51 @@
+.nhsuk-width-container--full {
+  margin: 0;
+  max-width: none;
+}
+
+.nhsuk-main-wrapper--no-padding {
+  padding: 0;
+}
+
+// ==========================================================================
+// HOME PAGE
+// ==========================================================================
+
+// SECTION
+.nhsuk-section {
+
+  &:first-of-type,
+  &:nth-of-type(even) {
+    background: $color_nhsuk-white;
+
+    .nhsuk-promo a {
+      background: #f0f4f5;
+    }
+  }
+
+  &:nth-of-type(2) {
+    @include mq($from: tablet) {
+      padding-top: nhsuk-spacing(6);
+    }
+  }
+}
+
+.nhsuk-section__content {
+  @include top-and-bottom;
+
+  padding-bottom: nhsuk-spacing(9);
+  padding-top: nhsuk-spacing(9);
+
+  @include mq($until: desktop) {
+    padding-bottom: nhsuk-spacing(7);
+    padding-top: nhsuk-spacing(7);
+
+    &+.nhsuk-section__content {
+      padding-top: 0;
+    }
+  }
+
+  h2 {
+    padding-top: 0;
+  }
+}
