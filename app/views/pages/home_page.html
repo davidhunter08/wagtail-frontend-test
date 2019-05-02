@@ -21,16 +21,20 @@
     <div class="nhsuk-width-container">
       <div class="nhsuk-grid-row">
         <div class="nhsuk-grid-column-one-half nhsuk-section__content">
-          <h2>Health A to Z</h2>
-          <p>Your complete guide to conditions, symptoms and treatments, including what to do and when to get help.</p>
+          <div class="nhsuk-u-reading-width">
+            <h2>Health A to Z</h2>
+            <p class="nhsuk-section__description">Your complete guide to conditions, symptoms and treatments, including what to do and when to get help.</p>
+          </div>
           {{ actionLink({
             "text": "Go to Health A to Z",
             "href": "#"
           }) }}
         </div>
         <div class="nhsuk-grid-column-one-half nhsuk-section__content">
-          <h2>Medicines A to Z</h2>
-          <p>Find out how your medicine works, how and when to take it, possible side effects and answers to your common questions.</p>
+          <div class="nhsuk-u-reading-width"> 
+            <h2>Medicines A to Z</h2>
+            <p class="nhsuk-section__description">Find out how your medicine works, how and when to take it, possible side effects and answers to your common questions.</p>
+          </div>
           {{ actionLink({
             "text": "Go to Medicines A to Z",
             "href": "#"
@@ -46,9 +50,9 @@
         <div class="nhsuk-grid-column-full nhsuk-section__content">
           <div class="nhsuk-u-reading-width">
             <h2>NHS services</h2>
-            <p>Find the service you need and book appointments online.</p>
+            <p class="nhsuk-section__description">Find the service you need and book appointments online.</p>
           </div>
-          <ul class="nhsuk-list-signage nhsuk-list-links--two-columns ">
+          <ul class="nhsuk-list-signage nhsuk-list-signage--two-columns">
             <li>
                 <a href="https://beta.nhs.uk/find-a-pharmacy/">
                     <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
@@ -56,7 +60,7 @@
                         <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/static/nhsuk_base/img/icon-chevron-right-grey.svg" xlink:href="">
                         </image>
                     </svg>
-                    <div>Find a pharmacy</div>
+                    Find a pharmacy
                 </a>
             </li>
             <li>
@@ -66,7 +70,7 @@
                         <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/static/nhsuk_base/img/icon-chevron-right-grey.svg" xlink:href="">
                         </image>
                     </svg>
-                    <div>Find a dentist</div>
+                    Find a dentist
                 </a>
             </li>
             <li>
@@ -76,7 +80,7 @@
                         <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/static/nhsuk_base/img/icon-chevron-right-grey.svg" xlink:href="">
                         </image>
                     </svg>
-                    <div>Find a GP</div>
+                    Find a GP
                 </a>
             </li>
             <li>
@@ -86,7 +90,7 @@
                         <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/static/nhsuk_base/img/icon-chevron-right-grey.svg" xlink:href="">
                         </image>
                     </svg>
-                    <div>Find your nearest A&amp;E</div>
+                    Find your nearest A&amp;E
                 </a>
             </li>
             <li>
@@ -96,7 +100,7 @@
                         <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/static/nhsuk_base/img/icon-chevron-right-grey.svg" xlink:href="">
                         </image>
                     </svg>
-                    <div>Find other urgent care services</div>
+                    Find other urgent care services
                 </a>
             </li>
           </ul>
@@ -119,13 +123,13 @@
         <div class="nhsuk-grid-column-full nhsuk-section__content">
           <div class="nhsuk-u-reading-width">
             <h2>Book GP appointments and order prescriptions online</h2>
-            <p>All GP practices now offer online services to:</p>
-            <ul>
+            <p class="nhsuk-section__description">All GP practices now offer online services to:</p>
+            <ul class="nhsuk-section__description">
               <li>book or cancel appointments</li>
               <li>order repeat prescriptions</li>
               <li>see parts of your medical record</li>
             </ul>
-            <p>Every month, over 1 million appointments are booked online and over 2 million prescriptions are ordered without needing to visit a GP.</p>
+            <p class="nhsuk-section__description">Every month, over 1 million appointments are booked online and over 2 million prescriptions are ordered without needing to visit a GP.</p>
           </div>
           {{ actionLink({
             "text": "Find out how to sign up for GP online services",
@@ -140,8 +144,10 @@
     <div class="nhsuk-width-container">
       <div class="nhsuk-grid-row">
         <div class="nhsuk-grid-column-one-half nhsuk-section__content">
-          <h2>Focus on...</h2>
-          <ul class="nhsuk-list-signage  nhsuk-list-links--one-column ">
+          <div class="nhsuk-u-reading-width">
+            <h2>Focus on...</h2>
+          </div>
+          <ul class="nhsuk-list-signage">
             <li>
                 <a href="https://www.nhs.uk/conditions/diabetes/">
                     <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
@@ -149,7 +155,7 @@
                         <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/static/nhsuk_base/img/icon-chevron-right-grey.svg" xlink:href="">
                         </image>
                     </svg>
-                    <div>Diabetes</div>
+                    Diabetes
                 </a>
             </li>
             <li>
@@ -159,7 +165,7 @@
                         <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/static/nhsuk_base/img/icon-chevron-right-grey.svg" xlink:href="">
                         </image>
                     </svg>
-                    <div>Cancer</div>
+                    Cancer
                 </a>
             </li>
             <li>
@@ -169,7 +175,7 @@
                         <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/static/nhsuk_base/img/icon-chevron-right-grey.svg" xlink:href="">
                         </image>
                     </svg>
-                    <div>Care and support</div>
+                    Care and support
                 </a>
             </li>
             <li>
@@ -179,7 +185,7 @@
                         <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/static/nhsuk_base/img/icon-chevron-right-grey.svg" xlink:href="">
                         </image>
                     </svg>
-                    <div>Pregnancy</div>
+                    Pregnancy
                 </a>
             </li>
             <li>
@@ -189,7 +195,7 @@
                         <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" src="/static/nhsuk_base/img/icon-chevron-right-grey.svg" xlink:href="">
                         </image>
                     </svg>
-                    <div>Mental health</div>
+                    Mental health
                 </a>
             </li>
           </ul>
@@ -204,7 +210,7 @@
         <div class="nhsuk-grid-column-full nhsuk-section__content">
           <div class="nhsuk-u-reading-width">
             <h2>European Health Insurance Card (EHIC)</h2>
-            <p>An EHIC can help you get free or reduced-cost healthcare while visiting many countries in Europe.</p>
+            <p class="nhsuk-section__description">An EHIC can help you get free or reduced-cost healthcare while visiting many countries in Europe.</p>
           </div>
           {{ actionLink({
             "text": "Apply for or renew your EHIC",
@@ -221,7 +227,7 @@
         <div class="nhsuk-grid-column-one-half nhsuk-section__content">
           <div class="nhsuk-u-reading-width">
             <h2>Healthy living</h2>
-            <p>Advice, tips and tools to help you make the best choices about your health and wellbeing.</p>
+            <p class="nhsuk-section__description">Advice, tips and tools to help you make the best choices about your health and wellbeing.</p>
             <ul class="nhsuk-list">
               <li><a href="#">Lose weight</a></li>
               <li><a href="#">Eat well</a></li>
@@ -252,7 +258,7 @@
         <div class="nhsuk-grid-column-full nhsuk-section__content">
           <div class="nhsuk-u-reading-width">
             <h2>Latest from the NHS</h2>
-            <p>News, events, information and advice.</p>
+            <p class="nhsuk-section__description">News, events, information and advice.</p>
           </div>
           <div class="nhsuk-grid-row nhsuk-promo-group">
             <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
@@ -281,6 +287,105 @@
             "text": "View all health stories",
             "href": "#"
           }) }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="nhsuk-section">
+    <div class="nhsuk-width-container">
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-full nhsuk-section__content">
+          <div class="nhsuk-u-reading-width">
+            <h2>Health apps</h2>
+            <p class="nhsuk-section__description">From exercise apps to managing diabetes, find digital tools to help you manage and improve your health.</p>
+          </div>
+          <h3 class="nhsuk-heading-xs nhsuk-u-padding-top-2 nhsuk-u-margin-bottom-2">Recently added apps</h3>
+          <ul class="nhsuk-list-apps nhsuk-list-apps--two-columns">
+
+            <li class="nhsuk-list-apps__item">
+              <a class="nhsuk-list-apps__link" href="https://apps.beta.nhs.uk/baby-and-child-first-aid/">
+                <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+                  <img class="nhsuk-list-apps__icon" src="https://assets.nhs.uk/prod/images/MS_1118_app_brc-baby-child.2e16d0ba.fill-216x216.jpg" alt="">
+                </div>
+                <span class="nhsuk-list-apps__title">Baby and Child First Aid</span>
+                <span class="nhsuk-list-apps__category">Pregnancy and Baby</span>
+              </a>
+            </li>
+
+            <li class="nhsuk-list-apps__item">
+              <a class="nhsuk-list-apps__link" href="https://apps.beta.nhs.uk/be-mindful/">
+                <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+                  <img class="nhsuk-list-apps__icon" src="https://assets.nhs.uk/prod/images/MS_1018_app_be-mindful.2e16d0ba.fill-216x216.jpg" alt="">
+                </div>
+                <span class="nhsuk-list-apps__title">Be Mindful</span>
+                <span class="nhsuk-list-apps__category">Mental Health</span>
+              </a>
+            </li>
+
+            <li class="nhsuk-list-apps__item">
+              <a class="nhsuk-list-apps__link" href="https://apps.beta.nhs.uk/my-health-fabric/">
+                <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+                  <img class="nhsuk-list-apps__icon" src="https://assets.nhs.uk/prod/images/MS_1018_app_health-fabric.2e16d0ba.fill-216x216.jpg" alt="">
+                </div>
+                <span class="nhsuk-list-apps__title">My Health Fabric</span>
+                <span class="nhsuk-list-apps__category">Healthy Living</span>
+              </a>
+            </li>
+
+            <li class="nhsuk-list-apps__item">
+              <a class="nhsuk-list-apps__link" href="https://apps.beta.nhs.uk/becca-breast-cancer-care-app/">
+                <div class="nhsuk-o-grid__item nhsuk-o-grid__item--one-third">
+                  <img class="nhsuk-list-apps__icon" src="https://assets.nhs.uk/prod/images/MS_1018_app_becca.2e16d0ba.fill-216x216.jpg" alt="">
+                </div>
+                <span class="nhsuk-list-apps__title">BECCA Breast Cancer Care App</span>
+                <span class="nhsuk-list-apps__category">Cancer</span>
+              </a>
+            </li>
+
+        </ul>
+          {{ actionLink({
+            "text": "Go to the NHS apps library",
+            "href": "#"
+          }) }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="nhsuk-section">
+    <div class="nhsuk-width-container">
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-full nhsuk-section__content">
+          <div class="nhsuk-u-reading-width">
+            <h2 class="nhsuk-u-visually-hidden">Campaigns</h2>
+          </div>
+          <div class="nhsuk-grid-row nhsuk-promo-group">
+            <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+              {{ promo({
+                "href": "#",
+                "heading": "Prescription changes",
+                "imgURL": "https://assets.nhs.uk/prod/images/MS_1018_give_blood.2e16d0ba.fill-2400x1350.jpg",
+                "description": "The NHS is reducing prescriptions for medicines you can buy in a pharmacy. Find out what this means for you."
+              }) }}
+            </div>
+            <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+              {{ promo({
+                "href": "#",
+                "heading": "Healthcare abroad",
+                "imgURL": "https://assets.nhs.uk/prod/images/MS_1018_yes_i_donate_promo.2e16d0ba.fill-2400x1350.jpg",
+                "description": "Find out about accessing healthcare when visiting, working, studying or living in the EU."
+              }) }}
+            </div>
+            <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+              {{ promo({
+                "href": "#",
+                "heading": "Breast cancer",
+                "imgURL": "https://assets.nhs.uk/prod/images/C4L_banner_2.2e16d0ba.fill-2400x1350.jpg",
+                "description": "Breast cancer affects around 50,000 women a year. Early detection can make treatment more effective."
+              }) }}
+            </div>
+          </div>
         </div>
       </div>
     </div>
