@@ -123,3 +123,32 @@ h1 + .nhsuk-lede-text--small {
 img {
   max-width: 100%;
 }
+
+// Care card immediate - text colour
+.nhsuk-care-card--immediate {
+
+  .nhsuk-details,
+  .nhsuk-details__summary {
+    color: $color_nhsuk-white;
+  }
+
+  .nhsuk-details__summary {
+    &:hover,
+    &:focus {
+      color: $color_nhsuk-black;
+    }
+  }
+
+}
+
+// Ndop document link image
+.ndop-download__link {
+  @include nhsuk-responsive-margin(4, 'bottom');
+
+  display:inline-block;
+}
+
+.ndop-download__thumbnail {
+  display: block;
+  margin: 0 auto;
+}
