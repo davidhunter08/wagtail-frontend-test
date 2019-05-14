@@ -1,0 +1,68 @@
+{% extends 'layouts/layout-nhsuk-two-columns-right.html' %}
+
+{% block pageTitle %}
+  TreatmentCardBlock
+{% endblock %}
+
+{% block content_page_heading %}
+  <h1>
+    <span role="text">TreatmentCardBlock<span class="nhsuk-caption-xl nhsuk-caption--bottom"><span class="nhsuk-u-visually-hidden"> -</span> Component</span></span>
+  </h1>
+{% endblock %}
+
+{% block content_two_thirds %}
+
+  <section>
+
+    <div class="nhsuk-panel-with-label">
+      <h3 class="nhsuk-panel-with-label__label">Eye injections</h3>
+
+      <p class="nhsuk-u-font-weight-bold">Anti-VEGF medicines – ranibizumab (Lucentis) and aflibercept (Eylea)</p>
+      <p>Injections given directly into the eyes.</p>
+      <ul>
+        <li>stops vision getting worse in 9 out of 10 people and improves vision in 3 out of 10 people</li>
+        <li>usually given every 1 or 2 months for as long as necessary</li>
+        <li>drops numb the eyes before treatment – most people have minimal discomfort</li>
+        <li>side effects include bleeding in the eye, feeling like there's something in the eye, and eyes being red and irritated</li>
+      </ul>
+      <p>The Macular Society has more on <a href="https://www.macularsociety.org/diagnosis-and-treatment" title="External website">injections for wet AMD</a>.</p>
+    </div>
+
+  </section>
+
+  <section>
+
+    <div class="nhsuk-panel-with-label">
+      <h3 class="nhsuk-panel-with-label__label">Light treatment</h3>
+
+      <p class="nhsuk-u-font-weight-bold">Photodynamic therapy (PDT)</p>
+      <p>A light is shined at the back of the eyes to destroy the abnormal blood vessels that cause wet AMD.</p>
+      <ul>
+        <li>may be recommended alongside eye injections if injections alone don't help</li>
+        <li>usually needs to be repeated every few months</li>
+        <li>side effects include temporary vision problems, and the eyes and skin being sensitive to light for a few days or weeks</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <section id="research-into-new-treatments">
+
+    <h2>Research into new treatments</h2>
+
+    <p>Research into new treatments for AMD is ongoing. Your specialist can let you know if there are any studies you could take part in.</p>
+
+    <p>You can also <a href="https://www.ukctg.nihr.ac.uk/home/" title="External website">search the UK Clinical Trials Gateway (UKCTG)</a> to find studies.</p>
+
+  </section>
+
+  {{ reviewDate({
+    "lastReview": "12 February 2017",
+    "nextReview": "1 February 2020"
+  }) }}
+
+{% endblock %}
+
+{% block content_one_third %}
+
+{% endblock %}
