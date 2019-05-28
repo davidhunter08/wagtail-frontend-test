@@ -1,0 +1,181 @@
+{% extends 'layouts/layout-nhsuk-two-columns-right.html' %}
+
+{% block pageTitle %}
+  DueDateCalculatorBlock with errors
+{% endblock %}
+
+{% block content_page_heading %}
+  <h1>
+    Pregnancy due date calculator
+  </h1>
+{% endblock %}
+
+{% block content_two_thirds %}  
+
+<section id="">
+  
+<p class="nhsuk-body-l">The calculator on this page can help you work out when you might expect your baby to arrive.</p>
+
+<div class="due-date-calculator">
+
+<div class="nhsuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1">
+  <h2 class="nhsuk-error-summary__title" id="error-summary-title">
+    There is a problem
+  </h2>
+  <div class="nhsuk-error-summary__body">
+    <!-- This list includes messages for ALL the possible errors -->
+    <!-- See guidance on date input error messages at https://design-system.service.gov.uk/components/date-input/ -->
+    <ul class="nhsuk-list nhsuk-error-summary__list">
+      <!-- If all date fields are empty -->
+      <li>
+        <a href="#day">Please enter the date of the first day of your last period</a>
+      </li>
+      <!-- If only the day field is empty -->
+      <li>
+        <a href="#day">The date of the first day of your last period must include a day</a>
+      </li>
+      <!-- If only the month field is empty -->
+      <li>
+        <a href="#month">The date of the first day of your last period must include a month</a>
+      </li>
+      <!-- If only the year field is empty -->
+      <li>
+        <a href="#year">The date of the first day of your last period must include a year</a>
+      </li>
+      <!-- If the month and year fields are empty -->
+      <li>
+        <a href="#month">The date of the first day of your last period must include a month and year</a>
+      </li>
+      <!-- If the day and year fields are empty -->
+      <li>
+        <a href="#day">The date of the first day of your last period must include a day and year</a>
+      </li>
+      <!-- If the day and month fields are empty -->
+      <li>
+        <a href="#day">The date of the first day of your last period must include a day and month</a>
+      </li>
+      <!-- If the date = more than 9 months (280 days) ago -->
+      <li>
+        <a href="#date">The first day of your last period needs to be less than 9 months (280 days) ago</a>
+      </li>
+      <!-- If the cycle length is not between 20 and 44 days -->
+      <li>
+        <a href="#cycle_length">The cycle length must be between 20 and 44 days</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<form action="#due-date-calculator" class="nhsuk-u-margin-bottom-5" type="GET" autocomplete="off">
+  <div class="nhsuk-form-group nhsuk-form-group--error">
+    <fieldset class="nhsuk-fieldset" aria-describedby="date-hint" role="group">
+      <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+        When was the first day of your last period?
+      </legend>
+      <span class="nhsuk-hint" id="date-hint">
+        For example, 15 3 2019
+      </span>
+      <span id="" class="nhsuk-error-message">
+        <span class="nhsuk-u-visually-hidden">Error:</span> Please enter the first day of your last period
+      </span> 
+      <span id="" class="nhsuk-error-message">
+        <span class="nhsuk-u-visually-hidden">Error:</span> 
+        <p>Date was more than 9 months (280 days) ago.</p>
+        <p>This tool only works up to 40 weeks of pregnancy. Please enter a date within the last 40 weeks.</p>
+      </span> 
+      <div class="nhsuk-date-input" id="date">
+        <div class="nhsuk-date-input__item">
+          <div class="nhsuk-form-group">
+            <label class="nhsuk-label nhsuk-date-input__label" for="day">
+              Day
+            </label>
+            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2 nhsuk-input--error" id="day" name="dob-day" type="number" pattern="[0-9]*">
+          </div>
+        </div>
+        <div class="nhsuk-date-input__item">
+          <div class="nhsuk-form-group">
+            <label class="nhsuk-label nhsuk-date-input__label" for="month">
+              Month
+            </label>
+            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2 nhsuk-input--error" id="month" name="dob-month" type="number" pattern="[0-9]*">
+          </div>
+        </div>
+        <div class="nhsuk-date-input__item">
+          <div class="nhsuk-form-group">
+            <label class="nhsuk-label nhsuk-date-input__label" for="year">
+              Year
+            </label>
+            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4 nhsuk-input--error" id="year" name="dob-year" type="number" pattern="[0-9]*">
+          </div>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+  <p>
+    Some women's cycles are not exactly 28 days. If your cycle is shorter or longerthan 28 days, please adjust the number below.
+  </p>
+
+  <div class="nhsuk-form-group nhsuk-form-group--error">
+    <label for="cycle_length" class="nhsuk-label">Adjusted cycle length in days:</label>
+    <span id="" class="nhsuk-error-message">
+      <span class="nhsuk-u-visually-hidden">Error:</span> The cycle length must be between 20 and 44 days
+    </span> 
+    <input id="cycle_length" class="nhsuk-input nhsuk-input--width-2 nhsuk-input--error" type="number" name="cycle_length" value="28">
+  </div>
+
+  <input type="submit" class="nhsuk-button" action="#due-date-calculator" method="GET" value="Show your due date">
+
+</form>
+
+</div>
+
+
+<h2>Using the due date calculator</h2>
+
+<p>To&nbsp;find&nbsp;your&nbsp;due date, enter the date of&nbsp;the first day of your last period, and click 'show your due date'&nbsp;- the calculator will do the rest.  Pregnancy normally lasts from 37 weeks to 42 weeks from the first day of your last period. </p>
+
+<p>As part of your <a href="/conditions/pregnancy-and-baby/antenatal-midwife-care-pregnant/">pregnancy (antenatal) care</a>, your midwife will offer you a&nbsp;<a href="/conditions/pregnancy-and-baby/dating-scan-ultrasound-10-11-12-13-weeks-pregnant/">dating scan</a> that will give you a more accurate date for the birth of your baby.</p>
+
+<p>Find out about:</p>
+
+<ul>
+<li><a href="/conditions/pregnancy-and-baby/nhs-pregnancy-journey/">your NHS pregnancy journey</a></li>
+<li>your <a href="/conditions/pregnancy-and-baby/first-midwife-appointment/">first midwife appointment</a></li>
+<li><a href="/conditions/pregnancy-and-baby/health-things-you-should-know-pregnant/">health things you should know when you're pregnant</a> </li>
+</ul>
+
+<p>Find out about what's happening when you're:</p>
+
+<ul>
+<li><a href="/conditions/pregnancy-and-baby/1-2-3-weeks-pregnant/">1, 2 or 3 weeks pregnant</a></li>
+<li><a href="/conditions/pregnancy-and-baby/4-weeks-pregnant/">4 weeks pregnant</a></li>
+<li><a href="/conditions/pregnancy-and-baby/5-weeks-pregnant/">5 weeks pregnant</a></li>
+<li><a href="/conditions/pregnancy-and-baby/6-weeks-pregnant/">6 weeks pregnant</a></li>
+<li><a href="/conditions/pregnancy-and-baby/7-weeks-pregnant/">7 weeks pregnant</a></li>
+<li><a href="/conditions/pregnancy-and-baby/8-weeks-pregnant/">8 weeks pregnant</a></li>
+</ul>
+
+<p>Sign up for <a href="https://www.nhs.uk/start4life/signups/new">Start4Life's pregnancy and baby emails</a> for expert advice, videos and tips on pregnancy, birth and beyond.</p>
+
+<p>You can find <a href="https://apps.beta.nhs.uk/category/pregnancy_and_baby/">pregnancy and baby apps and tools</a> in the NHS apps library.</p>
+
+<p>Unplanned or unsure? Find out <a href="https://sexwise.fpa.org.uk/unplanned-pregnancy">more information and support</a>.</p>
+
+
+
+
+      
+  
+</section>    
+            
+{% endblock %}
+
+{% block content_one_third %}
+
+
+{% endblock %}
+
+{% block pageScripts %}
+
+{% endblock %}

@@ -1,0 +1,157 @@
+{% extends 'layouts/layout-nhsuk-two-columns-right.html' %}
+
+{% block pageTitle %}
+  NewsletterSignupBlock
+{% endblock %}
+
+{% block content_page_heading %}
+  <h1>
+    Newsletter
+  </h1>
+{% endblock %}
+
+{% block content_two_thirds %}  
+
+<section id="newsletter">
+  
+    
+      
+
+
+
+<p>The NHS website provides monthly email newsletters giving the latest health news, tips and advice, and the latest information about our articles, videos, tools and much more, sent direct to your inbox. Join the thousands of people who already enjoy this free service. </p>
+
+<p>Use the form below to sign up for our popular monthly nhs.uk newsletter.</p>
+
+<p>You can unsubscribe at any time using links in the emails we send.</p>
+
+
+
+
+    
+  
+    
+      
+<form name="signup" class="newsletter_signup form" id="nl_signup" method="post" action="https://health-info.service.nhs.uk/signup.ashx" novalidate="novalidate">
+
+    <input type="hidden" name="addressbookid" value="10391985">
+    <input type="hidden" name="ci_isconsentform" value="true">
+    <input type="hidden" name="userid" value="164457">
+    <input type="hidden" name="SIG49610f7f31ccd2a28d38fb515733a6c02d81b78a93292cc7d96ac532b51c4b42" value="">
+    <input type="hidden" name="ReturnURL" value="/about-us/newsletter-success/">
+
+    <fieldset class="nhsuk-fieldset">
+        <legend><span class="nhsuk-u-visually-hidden">Your details</span></legend>
+
+        <div id="nl_firstnameGroup" class="nhsuk-form-group">
+            <span id="nl_firstnameError" class="nhsuk-error" aria-live="polite"></span>
+            <label for="nl_firstname" class="nhsuk-label">First name</label>
+            <input type="text" id="nl_firstname" class="nhsuk-input" name="cd_FIRSTNAME" required="">
+        </div>
+
+        <div id="nl_lastnameGroup" class="nhsuk-form-group">
+            <label for="nl_lastname" class="nhsuk-label">Last name</label>
+            <input type="text" id="nl_lastname" class="nhsuk-input" name="cd_LASTNAME">
+        </div>
+
+        <div id="nl_genderGroup" class="nhsuk-form-group">
+          <div class="nhsuk-radios">
+            <p class="nhsuk-label">Gender</p>
+            <div class="nhsuk-radios__item">
+                <input type="radio" class="nhsuk-radios__input" name="cd_GENDER" id="nl_gender_1" value="Female">
+                <label for="nl_gender_1" class="nhsuk-label nhsuk-radios__label">Female</label>
+            </div>
+            <div class="nhsuk-radios__item">
+                <input type="radio" class="nhsuk-radios__input" name="cd_GENDER" id="nl_gender_2" value="Male">
+                <label for="nl_gender_2" class="nhsuk-label nhsuk-radios__label">Male</label>
+            </div>
+            <div class="nhsuk-radios__item">
+                <input type="radio" class="nhsuk-radios__input" name="cd_GENDER" id="nl_gender_3" value="Other identity">
+                <label for="nl_gender_3" class="nhsuk-label nhsuk-radios__label">Other identity</label>
+            </div>
+            <div class="nhsuk-radios__item">
+                <input type="radio" class="nhsuk-radios__input" name="cd_GENDER" id="nl_gender_4" value="Prefer not to say" checked="">
+                <label for="nl_gender_4" class="nhsuk-label nhsuk-radios__label">Prefer not to say</label>
+            </div>
+          </div>
+        </div>
+
+        <div id="nl_emailGroup" class="nhsuk-form-group">
+            <label for="nl_email" class="nhsuk-label">Email address</label>
+            <span class="nhsuk-hint">For example you@example.com</span>
+            <span id="nl_emailError" class="nhsuk-error" aria-live="polite"></span>
+            <input type="email" id="nl_email" class="nhsuk-input" name="Email" required="">
+        </div>
+    </fieldset>
+
+    <p>If you change your mind, you can unsubscribe using the links in the emails we send.
+        We will send you a monthly Your Health newsletter, and will occasionally send you
+        other relevant health information via email (for example breaking news alerts)</p>
+    <br>
+    <p>Terms of use</p>
+
+    <div id="nl_confirmGroup">
+        <fieldset class="nhsuk-fieldset">
+            <legend><span class="nhsuk-u-visually-hidden">Agree terms and conditions</span></legend>
+
+            <span id="nl_tcError" class="nhsuk-error" aria-live="polite"></span>
+
+            <div class="multiple-choice">
+                <input type="checkbox" name="ci_userConsentCheckBox_1" id="nl_agree_1" value="1" required="">
+
+                <label for="nl_agree_1" class="multiple-choice__label">I have read and agree to the
+                    <a href="https://www.nhs.uk/our-policies/terms-and-conditions/" target="_blank">Terms &amp; Conditions</a>
+                    and <a href="https://www.nhs.uk/our-policies/privacy-policy/" target="_blank">Privacy Policy</a>
+                </label>
+            </div>
+        </fieldset>
+    </div>
+
+    <div id="nl_confirmGroup_2">
+        <fieldset class="nhsuk-fieldset">
+            <legend><span class="nhsuk-u-visually-hidden">Agree use of data for personalisation</span></legend>
+
+            <span id="nl_tcError_2" class="nhsuk-error" aria-live="polite"></span>
+
+            <div class="multiple-choice">
+                <input type="checkbox" name="ci_userConsentCheckBox_2" id="nl_agree_2" value="1" required="">
+                <label for="nl_agree_2" class="multiple-choice__label">I agree to the data I have provided being used to
+                    personalise the emails I receive from the NHS website
+                </label>
+            </div>
+        </fieldset>
+    </div>
+
+    <div id="nl_confirmGroup_3">
+        <fieldset class="nhsuk-fieldset">
+            <legend><span class="nhsuk-u-visually-hidden">Agree use of data to improve services</span></legend>
+
+            <span id="nl_tcError_3" class="nhsuk-error" aria-live="polite"></span>
+
+            <div class="multiple-choice">
+                <input type="checkbox" name="ci_userConsentCheckBox_3" id="nl_agree_3" value="1" required="">
+                <label for="nl_agree_3" class="multiple-choice__label">I agree to usage data being collected automatically
+                    in order for the NHS website to evaluate and improve the services we provide
+                </label>
+            </div>
+        </fieldset>
+    </div>
+    <button type="submit" class="nhsuk-button">Submit</button>
+</form>
+
+    
+  
+</section>
+
+{% endblock %}
+
+{% block content_one_third %}
+
+
+{% endblock %}
+
+{% block pageScripts %}
+
+  <script src="/js/newsletter-signup.js"></script>
+
+{% endblock %}

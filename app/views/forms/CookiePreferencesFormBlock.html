@@ -1,0 +1,226 @@
+{% extends 'layouts/layout-nhsuk-two-columns-right.html' %}
+
+{% block pageTitle %}
+  CookiePreferencesFormBlock
+{% endblock %}
+
+{% block content_page_heading %}
+  <h1>
+    Cookies on the NHS website
+  </h1>
+{% endblock %}
+
+{% block content_two_thirds %}
+<p>Cookies are files saved on your phone, tablet or computer when you visit a website.</p>
+
+<p>They store information about how you use the website, such as the pages you visit.</p>
+
+<p>Cookies are not viruses or computer programmes. They are very small so do not take up much space.</p>
+
+<div class="nhsuk-panel nhsuk-u-padding-bottom-1">
+    <div class="nhsuk-form-group nhsuk-u-margin-bottom-0">
+      <fieldset class="nhsuk-fieldset" id="cookie-preferences-form" aria-describedby="cookie-preferences">
+        <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+          <h2 class="nhsuk-fieldset__heading">Turn cookies on or off</h2>
+        </legend>
+        <p id="cookie-preferences">We use 4 main types of cookie on our website. You can choose which cookies you're happy for us to use.</p>
+
+        <h3>Cookies needed for the website to work</h3>
+        <p>These cookies do things like keep the website secure. They always need to be on.</p>
+
+        <h3>Cookies that remember your settings</h3>
+        <p>These cookies do things like remember pop-ups you’ve seen, so you're not shown them again.</p>
+
+        <div class="nhsuk-radios nhsuk-radios--inline nhsuk-u-margin-bottom-6">
+          <div class="nhsuk-radios__item">
+            <input class="nhsuk-radios__input" id="input-preferences-1" name="input-preferences" type="radio" value="on">
+            <label class="nhsuk-label nhsuk-radios__label" for="input-preferences-1">
+              On
+            </label>
+          </div>
+
+          <div class="nhsuk-radios__item">
+            <input class="nhsuk-radios__input" id="input-preferences-2" name="input-preferences" type="radio" value="yes">
+            <label class="nhsuk-label nhsuk-radios__label" for="input-preferences-2">
+              Off
+            </label>
+          </div>
+        </div>
+
+
+        <h3>Cookies that measure website use</h3>
+        <p>These cookies store information about how you use our website, such as what you click on.</p>
+
+        <div class="nhsuk-radios nhsuk-radios--inline nhsuk-u-margin-bottom-6">
+          <div class="nhsuk-radios__item">
+            <input class="nhsuk-radios__input" id="input-statistics-1" name="input-statistics" type="radio" value="on">
+            <label class="nhsuk-label nhsuk-radios__label" for="input-statistics-1">
+              On
+            </label>
+          </div>
+
+          <div class="nhsuk-radios__item">
+            <input class="nhsuk-radios__input" id="input-statistics-2" name="input-statistics" type="radio" value="yes">
+            <label class="nhsuk-label nhsuk-radios__label" for="input-statistics-2">
+              Off
+            </label>
+          </div>
+        </div>
+
+
+        <h3>Cookies that help with health campaigns</h3>
+        <p>These cookies do things like tell us if you've seen our adverts on social media, such as Facebook or Twitter.</p>
+
+        <div class="nhsuk-radios nhsuk-radios--inline nhsuk-u-margin-bottom-6">
+          <div class="nhsuk-radios__item">
+            <input class="nhsuk-radios__input" id="input-marketing-1" name="input-marketing" type="radio" value="on">
+            <label class="nhsuk-label nhsuk-radios__label" for="input-marketing-1">
+              On
+            </label>
+          </div>
+
+          <div class="nhsuk-radios__item">
+            <input class="nhsuk-radios__input" id="input-marketing-2" name="input-marketing" type="radio" value="yes">
+            <label class="nhsuk-label nhsuk-radios__label" for="input-marketing-2">
+              Off
+            </label>
+          </div>
+        </div>
+      </fieldset>
+      <button onclick="changeConsent(); reloadPage();" type="submit" class="nhsuk-button">
+          Save my settings
+      </button>
+      <p><a href="./cookie-declaration/">More details about our cookies</a></p>
+    </div>
+    <script>
+        // function to check the checkboxes based on status of cookie preferences
+        window.addEventListener("load", function checkCookie() {
+            loadSuccessBanner();
+            document.getElementById("input-preferences-1").checked = NHSCookieConsent.getPreferences();
+            document.getElementById("input-preferences-2").checked = !NHSCookieConsent.getPreferences();
+
+            document.getElementById("input-statistics-1").checked = NHSCookieConsent.getStatistics();
+            document.getElementById("input-statistics-2").checked = !NHSCookieConsent.getStatistics();
+
+            document.getElementById("input-marketing-1").checked = NHSCookieConsent.getMarketing();
+            document.getElementById("input-marketing-2").checked = !NHSCookieConsent.getMarketing();
+        });
+
+        // function to edit consent preferences based on check box input
+        function changeConsent() {
+          NHSCookieConsent.setPreferences(document.getElementById("input-preferences-1").checked);
+          NHSCookieConsent.setStatistics(document.getElementById("input-statistics-1").checked);
+          NHSCookieConsent.setMarketing(document.getElementById("input-marketing-1").checked);
+        }
+
+        function reloadPage() {
+          if(document.location.search === "?cookie-changed=1") {
+            document.location.reload();
+          } else {
+            document.location.search = "?cookie-changed=1";
+          }
+        }
+
+        function loadSuccessBanner() {
+          var url = window.location.href;
+          if (url.indexOf('cookie-changed=1') > 0) {
+            var html = "<div id='nhsuk-cookie-confirmation-banner' role='banner'>" +
+              "<div class='nhsuk-width-container'>" +
+              "<p>Your cookie settings have been saved.</p>" +
+              "</div>" +
+              "</div>" +
+              "<style>" +
+              "  #nhsuk-cookie-confirmation-banner {" +
+                            "background-color: #007f3b;" +
+                            "color: #fff;" +
+                            "padding: 8px 0 8px 0;" +
+                            "position: relative;" +
+                          "}" +
+                          "#nhsuk-cookie-confirmation-banner p {" +
+                            "margin: 0;" +
+                          "}" +
+                          "</style>";
+            var div = document.createElement('div');
+            div.innerHTML = html;
+            document.body.insertBefore(div, document.body.firstChild);
+          }
+        }
+
+    </script>
+  </div>
+
+  {{ reviewDate({
+    "lastReview": "12 February 2017",
+    "nextReview": "1 February 2020"
+  }) }}
+               
+            
+{% endblock %}
+
+{% block content_one_third %}
+
+<div class="nhsuk-related-nav">
+
+  <h2 class="nhsuk-related-nav__heading">
+    About us
+  </h2>
+
+  <nav role="navigation" class="nhsuk-related-nav__nav-section">
+
+    <ul class="nhsuk-related-nav__list">
+  
+    
+      <li class="nhsuk-related-nav__item">
+        <a class="nhsuk-related-nav__link" href="#">How to complain to the NHS</a></li>
+    
+  
+    
+      <li class="nhsuk-related-nav__item">
+        <a class="nhsuk-related-nav__link" href="#">Principles and values that guide the NHS</a></li>
+    
+  
+    
+      <li class="nhsuk-related-nav__item">
+        <a class="nhsuk-related-nav__link" href="#">Get involved in the NHS</a></li>
+    
+  
+    
+      <li class="nhsuk-related-nav__item">
+        <a class="nhsuk-related-nav__link" href="#">Your health records</a></li>
+    
+  
+    
+      <li class="nhsuk-related-nav__item nhsuk-related-nav__item--selected">How to access your health records</li>
+    
+  
+    
+      <li class="nhsuk-related-nav__item">
+        <a class="nhsuk-related-nav__link" href="#">Sharing your health records</a></li>
+    
+  
+    
+      <li class="nhsuk-related-nav__item">
+        <a class="nhsuk-related-nav__link" href="#">What is an NHS Number?</a></li>
+    
+  
+    
+      <li class="nhsuk-related-nav__item">
+        <a class="nhsuk-related-nav__link" href="#">Friends and Family Test (FFT)</a></li>
+    
+  
+    
+      <li class="nhsuk-related-nav__item">
+        <a class="nhsuk-related-nav__link" href="#">Your choices in the NHS</a></li>
+    
+  
+    
+      <li class="nhsuk-related-nav__item">
+        <a class="nhsuk-related-nav__link" href="#">Quality Accounts</a></li>
+    
+  
+  </ul>
+  </nav>
+
+</div>
+
+{% endblock %}
